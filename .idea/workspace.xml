@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8b15b94c-bddd-4e78-9ef4-3f201d3290f4" name="Changes" comment="start proj&#10;add urls">
+    <list default="true" id="8b15b94c-bddd-4e78-9ef4-3f201d3290f4" name="Changes" comment="start proj&#10;install allauth">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/callboard/callboard/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/callboard/callboard/settings.py" afterDir="false" />
     </list>
@@ -189,7 +189,23 @@
       <option name="project" value="LOCAL" />
       <updated>1705332409278</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="start proj&#10;install allauth">
+      <option name="closed" value="true" />
+      <created>1705332858388</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1705332858388</updated>
+    </task>
+    <task id="LOCAL-00017" summary="start proj&#10;install allauth">
+      <option name="closed" value="true" />
+      <created>1705332884725</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1705332884725</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -213,6 +229,7 @@
     <MESSAGE value="start proj&#10;add views" />
     <MESSAGE value="start proj&#10;delete author" />
     <MESSAGE value="start proj&#10;add urls" />
-    <option name="LAST_COMMIT_MESSAGE" value="start proj&#10;add urls" />
+    <MESSAGE value="start proj&#10;install allauth" />
+    <option name="LAST_COMMIT_MESSAGE" value="start proj&#10;install allauth" />
   </component>
 </project>
