@@ -4,17 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8b15b94c-bddd-4e78-9ef4-3f201d3290f4" name="Changes" comment="start proj&#10;add accounts models">
-      <change afterPath="$PROJECT_DIR$/callboard/board/forms.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/callboard/templates/post_create.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/callboard/templates/post_delete.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/callboard/templates/post_edit.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/callboard/templates/postlist.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/callboard/templates/posts.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/callboard/templates/registration/login.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/callboard/templates/registration/signup.html" afterDir="false" />
+    <list default="true" id="8b15b94c-bddd-4e78-9ef4-3f201d3290f4" name="Changes" comment="start proj&#10;delete author">
+      <change afterPath="$PROJECT_DIR$/callboard/board/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/callboard/board/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/callboard/board/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/callboard/board/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/callboard/board/admin.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -125,7 +118,31 @@
       <option name="project" value="LOCAL" />
       <updated>1705328309490</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="start proj&#10;add views">
+      <option name="closed" value="true" />
+      <created>1705330815553</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1705330815553</updated>
+    </task>
+    <task id="LOCAL-00008" summary="start proj&#10;delete author">
+      <option name="closed" value="true" />
+      <created>1705331211001</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1705331211001</updated>
+    </task>
+    <task id="LOCAL-00009" summary="start proj&#10;delete author">
+      <option name="closed" value="true" />
+      <created>1705331249090</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1705331249090</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -146,6 +163,8 @@
     <MESSAGE value="start proj&#10;add models" />
     <MESSAGE value="start proj&#10;add models + migrate" />
     <MESSAGE value="start proj&#10;add accounts models" />
-    <option name="LAST_COMMIT_MESSAGE" value="start proj&#10;add accounts models" />
+    <MESSAGE value="start proj&#10;add views" />
+    <MESSAGE value="start proj&#10;delete author" />
+    <option name="LAST_COMMIT_MESSAGE" value="start proj&#10;delete author" />
   </component>
 </project>
