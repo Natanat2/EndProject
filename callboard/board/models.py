@@ -29,6 +29,5 @@ class Response(models.Model):
     responsePost = models.ForeignKey(Post, on_delete = models.CASCADE)
     responseUser = models.ForeignKey(User, on_delete = models.CASCADE)
     text = models.TextField()
-    idResponse = models.AutoField()
     dateCreation = models.DateTimeField(auto_now_add = True)
     approve = models.BooleanField(default = False)
