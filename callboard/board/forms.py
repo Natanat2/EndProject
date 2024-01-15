@@ -1,7 +1,6 @@
 from django import forms
-
+from ckeditor.widgets import CKEditorWidget
 from .models import Post
-
 
 class PostForm(forms.ModelForm):
     class Meta:
@@ -12,3 +11,5 @@ class PostForm(forms.ModelForm):
             'title',
             'text',
         ]
+
+    text = forms.CharField(widget=CKEditorWidget())
