@@ -16,7 +16,7 @@ class Post(models.Model):
     postCategory = models.ForeignKey(Category, on_delete = models.CASCADE)
     dateCreation = models.DateTimeField(auto_now_add = True)
     title = models.CharField(max_length = 128, null = False)
-    text = tinymce.models.HTMLField
+    text = tinymce.models.HTMLField()
 
     def __str__(self):
         return self.title
