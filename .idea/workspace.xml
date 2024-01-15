@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8b15b94c-bddd-4e78-9ef4-3f201d3290f4" name="Changes" comment="start proj&#10;install allauth + migrate">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/callboard/board/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/callboard/board/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/callboard/board/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/callboard/board/urls.py" afterDir="false" />
+    <list default="true" id="8b15b94c-bddd-4e78-9ef4-3f201d3290f4" name="Changes" comment="start proj&#10;install ckeditor">
       <change beforePath="$PROJECT_DIR$/callboard/callboard/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/callboard/callboard/settings.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -26,6 +23,7 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RESET_MODE" value="HARD" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 5
@@ -240,7 +238,15 @@
       <option name="project" value="LOCAL" />
       <updated>1705334350466</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="start proj&#10;install ckeditor">
+      <option name="closed" value="true" />
+      <created>1705336413523</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1705336413523</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -266,6 +272,7 @@
     <MESSAGE value="start proj&#10;add urls" />
     <MESSAGE value="start proj&#10;install allauth" />
     <MESSAGE value="start proj&#10;install allauth + migrate" />
-    <option name="LAST_COMMIT_MESSAGE" value="start proj&#10;install allauth + migrate" />
+    <MESSAGE value="start proj&#10;install ckeditor" />
+    <option name="LAST_COMMIT_MESSAGE" value="start proj&#10;install ckeditor" />
   </component>
 </project>
