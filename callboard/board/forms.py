@@ -10,6 +10,7 @@ class PostForm(forms.ModelForm):
             'postCategory',
             'title',
             'text',
+            'content',
         ]
 
-    text = forms.CharField(widget=CKEditorWidget())
+    content = forms.CharField(widget=CKEditorWidget())
