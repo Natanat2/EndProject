@@ -1,7 +1,6 @@
-import tinymce.models
 from django.db import models
 from django.contrib.auth.models import User
-from tinymce.models import HTMLField
+from ckeditor.fields import RichTextField
 
 
 class Category(models.Model):
@@ -16,7 +15,8 @@ class Post(models.Model):
     postCategory = models.ForeignKey(Category, on_delete = models.CASCADE)
     dateCreation = models.DateTimeField(auto_now_add = True)
     title = models.CharField(max_length = 128, null = False)
-    text = tinymce.models.HTMLField()
+    text = models.TextField()
+    content = RichTextField()
 
     def __str__(self):
         return self.title
