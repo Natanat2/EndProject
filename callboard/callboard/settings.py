@@ -32,6 +32,8 @@ INSTALLED_APPS = [
     'fpages',
     'board',
     'accounts',
+    'allauth',
+    'allauth.account',
 ]
 
 SITE_ID = 1
