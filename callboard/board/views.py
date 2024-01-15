@@ -16,7 +16,7 @@ class PostList(ListView):
 class Postdetail(DetailView):
     model = Post
     template_name = 'post.html'
-    context_object_name = 'postdetail'
+    context_object_name = 'post'
     queryset = Post.objects.all()
 
 
