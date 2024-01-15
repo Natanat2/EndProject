@@ -2,8 +2,6 @@ from django.db import models
 from django.contrib.auth.models import User
 
 
-
-
 class Category(models.Model):
     name = models.CharField(max_length = 32, unique = True)
 
@@ -14,7 +12,6 @@ class Post(models.Model):
     dateCreation = models.DateTimeField(auto_now_add = True)
     title = models.CharField(max_length = 128, null = False)
     text = models.TextField()
-
 
     def __str__(self):
         return self.name.title()
