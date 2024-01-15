@@ -15,7 +15,7 @@ class PostList(ListView):
 
 class Postdetail(DetailView):
     model = Post
-    template_name = 'posts.html'
+    template_name = 'post.html'
     context_object_name = 'postdetail'
     queryset = Post.objects.all()
 
@@ -37,5 +37,5 @@ class PostEdit(PermissionRequiredMixin, UpdateView):
 class PostDelete(DeleteView):
     model = Post
     template_name ='post_delete.html'
-    success_url = reverse_lazy('posts.html')
+    success_url = reverse_lazy('postlist')
 
