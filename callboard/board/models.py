@@ -1,6 +1,7 @@
 from django.db import models
 from django.contrib.auth.models import User
 from ckeditor.fields import RichTextField
+from django.urls import reverse
 
 
 class Category(models.Model):
@@ -16,10 +17,13 @@ class Post(models.Model):
     dateCreation = models.DateTimeField(auto_now_add = True)
     title = models.CharField(max_length = 128, null = False)
     text = models.TextField()
-    content = RichTextField(default='Default Content')
+    content = RichTextField(default = 'Default Content')
 
     def __str__(self):
         return self.title
+
+    def get_absolute_url(self):
+        return reverse('post', args = [str(self.id)])
 
 
 class Response(models.Model):
