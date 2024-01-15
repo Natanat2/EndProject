@@ -17,7 +17,7 @@ class Post(models.Model):
     dateCreation = models.DateTimeField(auto_now_add = True)
     title = models.CharField(max_length = 128, null = False)
     text = models.TextField()
-    content = RichTextField(default = 'Default Content')
+    content = RichTextField()
 
     def __str__(self):
         return self.title
