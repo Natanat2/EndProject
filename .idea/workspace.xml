@@ -4,13 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8b15b94c-bddd-4e78-9ef4-3f201d3290f4" name="Changes" comment="start proj&#10;install ckeditor + migrate">
-      <change afterPath="$PROJECT_DIR$/callboard/board/templatetags/custom_filters.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/callboard/board/templatetags/custom_tags.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="8b15b94c-bddd-4e78-9ef4-3f201d3290f4" name="Changes" comment="start proj&#10;fix board">
       <change beforePath="$PROJECT_DIR$/callboard/board/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/callboard/board/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/callboard/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/callboard/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/callboard/templates/postlist.html" beforeDir="false" afterPath="$PROJECT_DIR$/callboard/templates/postlist.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -275,7 +271,15 @@
       <option name="project" value="LOCAL" />
       <updated>1705337604820</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="start proj&#10;fix board">
+      <option name="closed" value="true" />
+      <created>1705338032278</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1705338032278</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -303,6 +307,7 @@
     <MESSAGE value="start proj&#10;install allauth + migrate" />
     <MESSAGE value="start proj&#10;install ckeditor" />
     <MESSAGE value="start proj&#10;install ckeditor + migrate" />
-    <option name="LAST_COMMIT_MESSAGE" value="start proj&#10;install ckeditor + migrate" />
+    <MESSAGE value="start proj&#10;fix board" />
+    <option name="LAST_COMMIT_MESSAGE" value="start proj&#10;fix board" />
   </component>
 </project>
