@@ -1,22 +1,23 @@
 {% extends 'flatpages/default.html' %}
 
-
-
 {% block title %}
-Объявление
+    Объявление - {{ post.title }}
 {% endblock title %}
-
 
 {% block content %}
     <h2>{{ post.title }}</h2>
     <hr>
-        <table>
-            <tr>
-                <td><t>{{ post.text }}</t></td>
-            </tr>
-            <tr>
-                <td><t>{{ post.dateCreation|date:'d F Y'  }}</t></td>
-            </tr>
-       </table>
-
+    <table>
+        <tr>
+            <td>{{ post.text|safe }}</td>
+        </tr>
+        <tr>
+            <td>{{ post.dateCreation|date:'d F Y' }}</td>
+        </tr>
+        {% if post.content %}
+        <tr>
+            <td>{{ post.content|safe }}</td>
+        </tr>
+        {% endif %}
+    </table>
 {% endblock content %}
