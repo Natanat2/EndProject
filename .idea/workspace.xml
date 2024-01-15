@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8b15b94c-bddd-4e78-9ef4-3f201d3290f4" name="Changes" comment="start proj&#10;install allauth">
-      <change beforePath="$PROJECT_DIR$/callboard/callboard/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/callboard/callboard/settings.py" afterDir="false" />
+    <list default="true" id="8b15b94c-bddd-4e78-9ef4-3f201d3290f4" name="Changes" comment="start proj&#10;install allauth + migrate">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/callboard/board/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/callboard/board/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/callboard/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/callboard/db.sqlite3" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,17 +36,17 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/Users/natan/PycharmProjects/EndProject/callboard/board"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/natan/PycharmProjects/EndProject/callboard/board&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\natan\PycharmProjects\EndProject\callboard\board" />
@@ -212,7 +214,23 @@
       <option name="project" value="LOCAL" />
       <updated>1705333398701</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="start proj&#10;install allauth">
+      <option name="closed" value="true" />
+      <created>1705333460942</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1705333460942</updated>
+    </task>
+    <task id="LOCAL-00020" summary="start proj&#10;install allauth + migrate">
+      <option name="closed" value="true" />
+      <created>1705333618647</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1705333618647</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -237,6 +255,7 @@
     <MESSAGE value="start proj&#10;delete author" />
     <MESSAGE value="start proj&#10;add urls" />
     <MESSAGE value="start proj&#10;install allauth" />
-    <option name="LAST_COMMIT_MESSAGE" value="start proj&#10;install allauth" />
+    <MESSAGE value="start proj&#10;install allauth + migrate" />
+    <option name="LAST_COMMIT_MESSAGE" value="start proj&#10;install allauth + migrate" />
   </component>
 </project>
