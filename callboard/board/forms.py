@@ -14,7 +14,7 @@ class PostForm(forms.ModelForm):
             'content',
         ]
 
-    content = forms.CharField(widget = CKEditorWidget())
+    content = forms.CharField(widget = CKEditorWidget(), required = False)
 
 
 class ConfirmationCodeForm(forms.Form):

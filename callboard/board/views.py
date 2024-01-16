@@ -1,4 +1,4 @@
-from django.contrib.auth.mixins import PermissionRequiredMixin
+from django.contrib.auth.mixins import PermissionRequiredMixin, LoginRequiredMixin
 from django.core.mail import EmailMessage
 from django.template.loader import render_to_string
 from django.views.generic import ListView, DetailView, CreateView, UpdateView, DeleteView
@@ -74,11 +74,17 @@ class Postdetail(DetailView):
     queryset = Post.objects.all()
 
 
-class PostCreate(PermissionRequiredMixin, CreateView):
-    permission_required = ('post.add_post',)
-    form_class = PostForm
+class PostCreate(LoginRequiredMixin, CreateView):
     model = Post
     template_name = 'post_create.html'
+    fields = ['postCategory', 'title', 'text', 'content']
+
+    def form_valid(self, form):
+        form.instance.postAuthor = self.request.user
+        return super().form_valid(form)
+
+    def get_success_url(self):
+        return reverse_lazy('post_list')
 
 
 class PostEdit(PermissionRequiredMixin, UpdateView):
