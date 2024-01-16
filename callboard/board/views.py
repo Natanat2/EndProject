@@ -6,9 +6,13 @@ from django.urls import reverse_lazy
 from django.contrib.auth.forms import UserCreationForm
 from django.shortcuts import render, redirect
 from django.contrib.auth import authenticate, login
-from django.core.mail import send_mail
 from django import forms
 from django.contrib.auth.models import User
+import random
+
+
+def generate_one_time_code():
+    return ''.join(random.choice('abcdef') for _ in range(6))
 
 
 class PostList(ListView):
