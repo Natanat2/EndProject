@@ -35,9 +35,9 @@ def confirm_registration(request):
         form = ConfirmationCodeForm(request.POST)
         if form.is_valid():
             entered_code = form.cleaned_data['code']
-            if OneTimeCode.objects.filter(code = entered_code, user = request.user).exists():
-                OneTimeCode.objects.filter(code = entered_code, user = request.user).delete()
-                user = authenticate(request, username = request.user.username)
+            if OneTimeCode.objects.filter(code=entered_code, user=request.user).exists():
+                OneTimeCode.objects.filter(code=entered_code, user=request.user).delete()
+                user = authenticate(request, username=request.user.username, backend='allauth.account.auth_backends.AuthenticationBackend')
                 login(request, user)
                 messages.success(request, 'Регистрация успешно завершена!')
                 return redirect('post_list')
@@ -47,6 +47,7 @@ def confirm_registration(request):
         form = ConfirmationCodeForm()
 
     return render(request, 'confirm_registration.html', {'form': form})
+
 
 
 class PostList(ListView):
@@ -104,7 +105,7 @@ def registration_view(request):
                                 password = form.cleaned_data['password1'])
             login(request, user)
 
-            return redirect('post_list')
+            return redirect('confirm_registration')
     else:
         form = RegistrationForm()
 
