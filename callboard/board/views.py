@@ -30,6 +30,9 @@ def send_one_time_code_email(email, code, request):
     email.send()
 
 
+from django.contrib.auth import authenticate, login
+
+
 def confirm_registration(request):
     if request.method == 'POST':
         form = ConfirmationCodeForm(request.POST)
