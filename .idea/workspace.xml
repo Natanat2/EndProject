@@ -4,13 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8b15b94c-bddd-4e78-9ef4-3f201d3290f4" name="Changes" comment="start proj&#10;add code confirm + mig&#10;add random def &#10;done&#10;EMAIL_BACKEND (console)smtp&#10;none(mandatory)">
-      <change afterPath="$PROJECT_DIR$/callboard/templates/confirm_registration.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/callboard/board/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/callboard/board/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/callboard/board/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/callboard/board/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/callboard/board/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/callboard/board/views.py" afterDir="false" />
-    </list>
+    <list default="true" id="8b15b94c-bddd-4e78-9ef4-3f201d3290f4" name="Changes" comment="start proj&#10;add code confirm to views&#10;form after registration&#10;&#10;EMAIL_BACKEND (console)smtp&#10;none(mandatory)" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -73,14 +67,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1705172650457</updated>
-    </task>
-    <task id="LOCAL-00006" summary="start proj&#10;add accounts models">
-      <option name="closed" value="true" />
-      <created>1705328309490</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1705328309490</updated>
     </task>
     <task id="LOCAL-00007" summary="start proj&#10;add views">
       <option name="closed" value="true" />
@@ -466,7 +452,15 @@
       <option name="project" value="LOCAL" />
       <updated>1705432600548</updated>
     </task>
-    <option name="localTasksCounter" value="55" />
+    <task id="LOCAL-00055" summary="start proj&#10;add code confirm to views&#10;form after registration&#10;&#10;EMAIL_BACKEND (console)smtp&#10;none(mandatory)">
+      <option name="closed" value="true" />
+      <created>1705433140938</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1705433140938</updated>
+    </task>
+    <option name="localTasksCounter" value="56" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -482,7 +476,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="start proj&#10;add models + migrate" />
     <MESSAGE value="start proj&#10;add accounts models" />
     <MESSAGE value="start proj&#10;add views" />
     <MESSAGE value="start proj&#10;delete author" />
@@ -507,6 +500,7 @@
     <MESSAGE value="start proj&#10;add code confirm + mig&#10;EMAIL_BACKEND (console)smtp&#10;none(mandatory)" />
     <MESSAGE value="start proj&#10;add code confirm + mig&#10;add random def&#10;EMAIL_BACKEND (console)smtp&#10;none(mandatory)" />
     <MESSAGE value="start proj&#10;add code confirm + mig&#10;add random def &#10;done&#10;EMAIL_BACKEND (console)smtp&#10;none(mandatory)" />
-    <option name="LAST_COMMIT_MESSAGE" value="start proj&#10;add code confirm + mig&#10;add random def &#10;done&#10;EMAIL_BACKEND (console)smtp&#10;none(mandatory)" />
+    <MESSAGE value="start proj&#10;add code confirm to views&#10;form after registration&#10;&#10;EMAIL_BACKEND (console)smtp&#10;none(mandatory)" />
+    <option name="LAST_COMMIT_MESSAGE" value="start proj&#10;add code confirm to views&#10;form after registration&#10;&#10;EMAIL_BACKEND (console)smtp&#10;none(mandatory)" />
   </component>
 </project>
