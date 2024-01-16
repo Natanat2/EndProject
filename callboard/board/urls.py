@@ -12,5 +12,6 @@ urlpatterns = [
     path('register/', registration_view, name='registration_view'),
     path('confirm-registration/', confirm_registration, name='confirm_registration'),
     path('logout/', LogoutView.as_view(next_page='post_list'), name='logout'),
+    path('accounts/login/', LogoutView.as_view(), name='login'),
     path('ckeditor/', include('ckeditor_uploader.urls')),
 ]
