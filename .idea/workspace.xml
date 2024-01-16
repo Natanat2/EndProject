@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8b15b94c-bddd-4e78-9ef4-3f201d3290f4" name="Changes" comment="start proj&#10;add code confirm to views&#10;form after registration&#10;fix all&#10;&#10;EMAIL_BACKEND (console)smtp&#10;none(mandatory)">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/callboard/board/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/callboard/board/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/callboard/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/callboard/db.sqlite3" afterDir="false" />
     </list>
@@ -70,22 +71,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1705172650457</updated>
-    </task>
-    <task id="LOCAL-00012" summary="start proj&#10;add urls">
-      <option name="closed" value="true" />
-      <created>1705332016266</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1705332016266</updated>
-    </task>
-    <task id="LOCAL-00013" summary="start proj&#10;add urls">
-      <option name="closed" value="true" />
-      <created>1705332135495</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1705332135495</updated>
     </task>
     <task id="LOCAL-00014" summary="start proj&#10;add urls">
       <option name="closed" value="true" />
@@ -463,7 +448,23 @@
       <option name="project" value="LOCAL" />
       <updated>1705434834816</updated>
     </task>
-    <option name="localTasksCounter" value="61" />
+    <task id="LOCAL-00061" summary="start proj&#10;add code confirm to views&#10;form after registration&#10;fix all&#10;&#10;EMAIL_BACKEND (console)smtp&#10;none(mandatory)">
+      <option name="closed" value="true" />
+      <created>1705434940148</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1705434940148</updated>
+    </task>
+    <task id="LOCAL-00062" summary="start proj&#10;add code confirm to views&#10;form after registration&#10;fix all&#10;&#10;EMAIL_BACKEND (console)smtp&#10;none(mandatory)">
+      <option name="closed" value="true" />
+      <created>1705435118498</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1705435118498</updated>
+    </task>
+    <option name="localTasksCounter" value="63" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

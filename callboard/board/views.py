@@ -7,7 +7,7 @@ from .forms import PostForm, ConfirmationCodeForm
 from django.urls import reverse_lazy, reverse
 from django.contrib.auth.forms import UserCreationForm
 from django.shortcuts import render, redirect
-from django.contrib.auth import authenticate, login
+from django.contrib.auth import authenticate, login, get_user_model
 from django import forms
 from django.contrib.auth.models import User
 from django.contrib import messages
@@ -38,12 +38,19 @@ def confirm_registration(request):
         form = ConfirmationCodeForm(request.POST)
         if form.is_valid():
             entered_code = form.cleaned_data['code']
-            if OneTimeCode.objects.filter(code = entered_code, user = request.user).exists():
-                OneTimeCode.objects.filter(code = entered_code, user = request.user).delete()
-                user = authenticate(request, username = request.user.username)
-                login(request, user)
-                messages.success(request, 'Регистрация успешно завершена!')
-                return redirect('post_list')
+            if OneTimeCode.objects.filter(code=entered_code, user=request.user).exists():
+                OneTimeCode.objects.filter(code=entered_code, user=request.user).delete()
+
+                user_model = get_user_model()
+                user = user_model.objects.get(username=request.user.username)
+
+                if user is not None:
+                    user.backend = 'django.contrib.auth.backends.ModelBackend'
+                    login(request, user)
+                    messages.success(request, 'Регистрация успешно завершена!')
+                    return redirect('post_list')
+                else:
+                    messages.error(request, 'Неверные учетные данные. Пожалуйста, попробуйте еще раз.')
             else:
                 messages.error(request, 'Неверный код подтверждения. Пожалуйста, попробуйте еще раз.')
     else:
