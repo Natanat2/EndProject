@@ -23,18 +23,20 @@
        <table>
            {% for post in postlist %}
            <tr>
-               <td>{{ post.title }}</td>
-               <td>{{ post.dateCreation|date:'d F Y' }}</td>
+               <td><a href="{% url 'post_detail' pk=post.id %}">{{ post.title }}</a>
+                   </td>
                <td>{{ post.text|truncatechars:20 }}</td>
+               <td>{{ post.dateCreation|date:'d F Y' }}</td>
                <td>
                     {% if perms.post.change_post %}
                     <a href="{% url 'post_update' pk=post.id %}">Изменить</a>
                     {% endif %}
 
-                </td>
-
+               </td>
 
            </tr>
+
+
            {% endfor %}
 
        </table>
