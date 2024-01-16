@@ -1,10 +1,10 @@
 from django.contrib.auth.mixins import PermissionRequiredMixin
-from django.core.mail import send_mail, EmailMessage
+from django.core.mail import EmailMessage
 from django.template.loader import render_to_string
 from django.views.generic import ListView, DetailView, CreateView, UpdateView, DeleteView
 from .models import Post, OneTimeCode
 from .forms import PostForm, ConfirmationCodeForm
-from django.urls import reverse_lazy
+from django.urls import reverse_lazy, reverse
 from django.contrib.auth.forms import UserCreationForm
 from django.shortcuts import render, redirect
 from django.contrib.auth import authenticate, login

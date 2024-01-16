@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8b15b94c-bddd-4e78-9ef4-3f201d3290f4" name="Changes" comment="start proj&#10;add code confirm to views&#10;form after registration&#10;&#10;EMAIL_BACKEND (console)smtp&#10;none(mandatory)" />
+    <list default="true" id="8b15b94c-bddd-4e78-9ef4-3f201d3290f4" name="Changes" comment="start proj&#10;add code confirm to views&#10;form after registration&#10;fix all&#10;&#10;EMAIL_BACKEND (console)smtp&#10;none(mandatory)" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -67,22 +67,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1705172650457</updated>
-    </task>
-    <task id="LOCAL-00007" summary="start proj&#10;add views">
-      <option name="closed" value="true" />
-      <created>1705330815553</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1705330815553</updated>
-    </task>
-    <task id="LOCAL-00008" summary="start proj&#10;delete author">
-      <option name="closed" value="true" />
-      <created>1705331211001</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1705331211001</updated>
     </task>
     <task id="LOCAL-00009" summary="start proj&#10;delete author">
       <option name="closed" value="true" />
@@ -460,7 +444,23 @@
       <option name="project" value="LOCAL" />
       <updated>1705433140938</updated>
     </task>
-    <option name="localTasksCounter" value="56" />
+    <task id="LOCAL-00056" summary="start proj&#10;add code confirm to views&#10;form after registration&#10;&#10;EMAIL_BACKEND (console)smtp&#10;none(mandatory)">
+      <option name="closed" value="true" />
+      <created>1705433210523</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1705433210523</updated>
+    </task>
+    <task id="LOCAL-00057" summary="start proj&#10;add code confirm to views&#10;form after registration&#10;fix all&#10;&#10;EMAIL_BACKEND (console)smtp&#10;none(mandatory)">
+      <option name="closed" value="true" />
+      <created>1705433493516</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1705433493516</updated>
+    </task>
+    <option name="localTasksCounter" value="58" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -476,7 +476,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="start proj&#10;add accounts models" />
     <MESSAGE value="start proj&#10;add views" />
     <MESSAGE value="start proj&#10;delete author" />
     <MESSAGE value="start proj&#10;add urls" />
@@ -501,6 +500,7 @@
     <MESSAGE value="start proj&#10;add code confirm + mig&#10;add random def&#10;EMAIL_BACKEND (console)smtp&#10;none(mandatory)" />
     <MESSAGE value="start proj&#10;add code confirm + mig&#10;add random def &#10;done&#10;EMAIL_BACKEND (console)smtp&#10;none(mandatory)" />
     <MESSAGE value="start proj&#10;add code confirm to views&#10;form after registration&#10;&#10;EMAIL_BACKEND (console)smtp&#10;none(mandatory)" />
-    <option name="LAST_COMMIT_MESSAGE" value="start proj&#10;add code confirm to views&#10;form after registration&#10;&#10;EMAIL_BACKEND (console)smtp&#10;none(mandatory)" />
+    <MESSAGE value="start proj&#10;add code confirm to views&#10;form after registration&#10;fix all&#10;&#10;EMAIL_BACKEND (console)smtp&#10;none(mandatory)" />
+    <option name="LAST_COMMIT_MESSAGE" value="start proj&#10;add code confirm to views&#10;form after registration&#10;fix all&#10;&#10;EMAIL_BACKEND (console)smtp&#10;none(mandatory)" />
   </component>
 </project>
