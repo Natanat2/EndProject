@@ -19,7 +19,7 @@ def generate_one_time_code():
 def send_one_time_code_email(email, code):
     subject = 'Код подтверждения регистрации'
     message = f'Ваш код подтверждения: {code}'
-    from_email = 'natanat2@uandex.ru'
+    from_email = 'natanat2@yandex.ru'
     send_mail(subject, message, from_email, [email])
 
 
