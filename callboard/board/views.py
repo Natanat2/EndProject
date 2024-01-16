@@ -17,10 +17,11 @@ def generate_one_time_code():
     return ''.join(random.choice('abcdef') for _ in range(6))
 
 
-def send_one_time_code_email(email, code):
+def send_one_time_code_email(email, code, request):
     subject = 'Код подтверждения регистрации'
     message = f'Ваш код подтверждения: {code}'
-    html_message = render_to_string('email_template.html', {'code': code})
+    confirm_url = request.build_absolute_uri(reverse('confirm_registration'))
+    html_message = render_to_string('email_template.html', {'code': code, 'confirm_url': confirm_url})
     from_email = 'natanat2@yandex.ru'
     to_email = [email]
     email = EmailMessage(subject, message, from_email, to_email)
@@ -96,7 +97,7 @@ def registration_view(request):
             user = form.save()
             one_time_code = generate_one_time_code()
             OneTimeCode.objects.create(code = one_time_code, user = user)
-            send_one_time_code_email(user.email, one_time_code)
+            send_one_time_code_email(user.email, one_time_code, request)
             user = authenticate(request, username = form.cleaned_data['username'],
                                 password = form.cleaned_data['password1'])
             login(request, user)
