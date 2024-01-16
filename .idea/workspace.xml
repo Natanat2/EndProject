@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8b15b94c-bddd-4e78-9ef4-3f201d3290f4" name="Changes" comment="start proj&#10;add code confirm + mig&#10;use console(smtp)&#10;none(mandatory)">
-      <change beforePath="$PROJECT_DIR$/callboard/callboard/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/callboard/callboard/settings.py" afterDir="false" />
+    <list default="true" id="8b15b94c-bddd-4e78-9ef4-3f201d3290f4" name="Changes" comment="start proj&#10;add code confirm + mig&#10;add random def&#10;EMAIL_BACKEND (console)smtp&#10;none(mandatory)">
       <change beforePath="$PROJECT_DIR$/callboard/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/callboard/db.sqlite3" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -439,7 +438,31 @@
       <option name="project" value="LOCAL" />
       <updated>1705431733765</updated>
     </task>
-    <option name="localTasksCounter" value="47" />
+    <task id="LOCAL-00047" summary="start proj&#10;add code confirm + mig&#10;EMAIL_BACKEND (console)smtp&#10;none(mandatory)">
+      <option name="closed" value="true" />
+      <created>1705431859023</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1705431859023</updated>
+    </task>
+    <task id="LOCAL-00048" summary="start proj&#10;add code confirm + mig&#10;add random def&#10;EMAIL_BACKEND (console)smtp&#10;none(mandatory)">
+      <option name="closed" value="true" />
+      <created>1705432034179</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1705432034179</updated>
+    </task>
+    <task id="LOCAL-00049" summary="start proj&#10;add code confirm + mig&#10;add random def&#10;EMAIL_BACKEND (console)smtp&#10;none(mandatory)">
+      <option name="closed" value="true" />
+      <created>1705432071989</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1705432071989</updated>
+    </task>
+    <option name="localTasksCounter" value="50" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -455,8 +478,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="start" />
-    <MESSAGE value="start proj" />
     <MESSAGE value="start proj&#10;add models" />
     <MESSAGE value="start proj&#10;add models + migrate" />
     <MESSAGE value="start proj&#10;add accounts models" />
@@ -480,6 +501,8 @@
     <MESSAGE value="start proj&#10;email fix&#10;use console(smtp)&#10;none(mandatory)" />
     <MESSAGE value="start proj&#10;add code confirm&#10;use console(smtp)&#10;none(mandatory)" />
     <MESSAGE value="start proj&#10;add code confirm + mig&#10;use console(smtp)&#10;none(mandatory)" />
-    <option name="LAST_COMMIT_MESSAGE" value="start proj&#10;add code confirm + mig&#10;use console(smtp)&#10;none(mandatory)" />
+    <MESSAGE value="start proj&#10;add code confirm + mig&#10;EMAIL_BACKEND (console)smtp&#10;none(mandatory)" />
+    <MESSAGE value="start proj&#10;add code confirm + mig&#10;add random def&#10;EMAIL_BACKEND (console)smtp&#10;none(mandatory)" />
+    <option name="LAST_COMMIT_MESSAGE" value="start proj&#10;add code confirm + mig&#10;add random def&#10;EMAIL_BACKEND (console)smtp&#10;none(mandatory)" />
   </component>
 </project>

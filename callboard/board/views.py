@@ -15,6 +15,13 @@ def generate_one_time_code():
     return ''.join(random.choice('abcdef') for _ in range(6))
 
 
+def send_one_time_code_email(email, code):
+    subject = 'Код подтверждения регистрации'
+    message = f'Ваш код подтверждения: {code}'
+    from_email = 'noreply@example.com'
+    send_mail(subject, message, from_email, [email])
+
+
 class PostList(ListView):
     model = Post
     ordering = 'dateCreation'
