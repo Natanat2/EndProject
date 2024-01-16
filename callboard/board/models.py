@@ -32,3 +32,11 @@ class Response(models.Model):
     text = models.TextField()
     dateCreation = models.DateTimeField(auto_now_add = True)
     approve = models.BooleanField(default = False)
+
+
+class OneTimeCode(models.Model):
+    code = models.CharField(max_length = 6)
+    user = models.OneToOneField(User, on_delete = models.CASCADE)
+
+    def __str__(self):
+        return f"{self.user.username} - {self.code}"
