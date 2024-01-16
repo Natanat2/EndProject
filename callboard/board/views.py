@@ -1,8 +1,9 @@
 from django.contrib.auth.mixins import PermissionRequiredMixin
-from django.core.mail import send_mail
+from django.core.mail import send_mail, EmailMessage
+from django.template.loader import render_to_string
 from django.views.generic import ListView, DetailView, CreateView, UpdateView, DeleteView
 from .models import Post, OneTimeCode
-from .forms import PostForm
+from .forms import PostForm, ConfirmationCodeForm
 from django.urls import reverse_lazy
 from django.contrib.auth.forms import UserCreationForm
 from django.shortcuts import render, redirect
@@ -19,9 +20,31 @@ def generate_one_time_code():
 def send_one_time_code_email(email, code):
     subject = 'Код подтверждения регистрации'
     message = f'Ваш код подтверждения: {code}'
+    html_message = render_to_string('email_template.html', {'code': code})
     from_email = 'natanat2@yandex.ru'
-    send_mail(subject, message, from_email, [email])
+    to_email = [email]
+    email = EmailMessage(subject, message, from_email, to_email)
+    email.content_subtype = 'html'
+    email.send()
 
+
+def confirm_registration(request):
+    if request.method == 'POST':
+        form = ConfirmationCodeForm(request.POST)
+        if form.is_valid():
+            entered_code = form.cleaned_data['code']
+            if OneTimeCode.objects.filter(code=entered_code, user=request.user).exists():
+                OneTimeCode.objects.filter(code=entered_code, user=request.user).delete()
+                user = authenticate(request, username=request.user.username)
+                login(request, user)
+                messages.success(request, 'Регистрация успешно завершена!')
+                return redirect('post_list')
+            else:
+                messages.error(request, 'Неверный код подтверждения. Пожалуйста, попробуйте еще раз.')
+    else:
+        form = ConfirmationCodeForm()
+
+    return render(request, 'confirm_registration.html', {'form': form})
 
 class PostList(ListView):
     model = Post

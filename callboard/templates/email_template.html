@@ -1,0 +1,12 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Код подтверждения регистрации</title>
+</head>
+<body>
+  <p>Ваш код подтверждения: {{ code }}</p>
+  <p>Для завершения регистрации, перейдите по <a href="{% url 'confirm_registration' %}">ссылке</a>.</p>
+</body>
+</html>
