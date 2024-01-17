@@ -14,8 +14,11 @@ class PostForm(forms.ModelForm):
             'content',
         ]
 
-    content = forms.CharField(widget = CKEditorWidget(), required = False)
+    widgets = {
+        'content': CKEditorWidget(),
+    }
 
+    content = forms.CharField(widget=CKEditorWidget(), required=False)
 
 class ConfirmationCodeForm(forms.Form):
     code = forms.CharField(max_length = 6, widget = forms.TextInput(attrs = {'autocomplete': 'off'}))
