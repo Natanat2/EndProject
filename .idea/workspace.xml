@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8b15b94c-bddd-4e78-9ef4-3f201d3290f4" name="Changes" comment="start proj&#10;auth for add post&#10;&#10;EMAIL_BACKEND (console)smtp&#10;none(mandatory)">
-      <change beforePath="$PROJECT_DIR$/callboard/board/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/callboard/board/forms.py" afterDir="false" />
+    <list default="true" id="8b15b94c-bddd-4e78-9ef4-3f201d3290f4" name="Changes" comment="start proj&#10;del text field done&#10;remove This field is required&#10;&#10;EMAIL_BACKEND (console)smtp&#10;none(mandatory)">
+      <change beforePath="$PROJECT_DIR$/callboard/templates/postlist.html" beforeDir="false" afterPath="$PROJECT_DIR$/callboard/templates/postlist.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,22 +69,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1705172650457</updated>
-    </task>
-    <task id="LOCAL-00019" summary="start proj&#10;install allauth">
-      <option name="closed" value="true" />
-      <created>1705333460942</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1705333460942</updated>
-    </task>
-    <task id="LOCAL-00020" summary="start proj&#10;install allauth + migrate">
-      <option name="closed" value="true" />
-      <created>1705333618647</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1705333618647</updated>
     </task>
     <task id="LOCAL-00021" summary="start proj&#10;install allauth + migrate">
       <option name="closed" value="true" />
@@ -462,7 +446,23 @@
       <option name="project" value="LOCAL" />
       <updated>1705441810989</updated>
     </task>
-    <option name="localTasksCounter" value="68" />
+    <task id="LOCAL-00068" summary="start proj&#10;del text field&#10;remove This field is required&#10;&#10;EMAIL_BACKEND (console)smtp&#10;none(mandatory)">
+      <option name="closed" value="true" />
+      <created>1705486000424</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1705486000424</updated>
+    </task>
+    <task id="LOCAL-00069" summary="start proj&#10;del text field done&#10;remove This field is required&#10;&#10;EMAIL_BACKEND (console)smtp&#10;none(mandatory)">
+      <option name="closed" value="true" />
+      <created>1705486100562</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1705486100562</updated>
+    </task>
+    <option name="localTasksCounter" value="70" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -478,8 +478,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="start proj&#10;install ckeditor" />
-    <MESSAGE value="start proj&#10;install ckeditor + migrate" />
     <MESSAGE value="start proj&#10;fix board" />
     <MESSAGE value="start proj&#10;fix ckeditor" />
     <MESSAGE value="start proj&#10;fix ckeditor done" />
@@ -503,6 +501,8 @@
     <MESSAGE value="start proj&#10;add logout + url&#10;&#10;EMAIL_BACKEND (console)smtp&#10;none(mandatory)" />
     <MESSAGE value="start proj&#10;add logout + url + login&#10;&#10;EMAIL_BACKEND (console)smtp&#10;none(mandatory)" />
     <MESSAGE value="start proj&#10;auth for add post&#10;&#10;EMAIL_BACKEND (console)smtp&#10;none(mandatory)" />
-    <option name="LAST_COMMIT_MESSAGE" value="start proj&#10;auth for add post&#10;&#10;EMAIL_BACKEND (console)smtp&#10;none(mandatory)" />
+    <MESSAGE value="start proj&#10;del text field&#10;remove This field is required&#10;&#10;EMAIL_BACKEND (console)smtp&#10;none(mandatory)" />
+    <MESSAGE value="start proj&#10;del text field done&#10;remove This field is required&#10;&#10;EMAIL_BACKEND (console)smtp&#10;none(mandatory)" />
+    <option name="LAST_COMMIT_MESSAGE" value="start proj&#10;del text field done&#10;remove This field is required&#10;&#10;EMAIL_BACKEND (console)smtp&#10;none(mandatory)" />
   </component>
 </project>

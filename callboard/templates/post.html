@@ -9,13 +9,9 @@
     <hr>
     <table>
         <tr>
-            <td>{{ post.text|safe }}</td>
-        </tr>
-          {% if post.content %}
-        <tr>
             <td>{{ post.content|safe }}</td>
         </tr>
-        {% endif %}
+
         <tr>
             <td>{{ post.dateCreation|date:'d F Y' }}</td>
         </tr>
