@@ -1,17 +1,19 @@
-from django.contrib.auth.mixins import LoginRequiredMixin
-from django.core.mail import EmailMessage
-from django.template.loader import render_to_string
-from django.views.generic import ListView, DetailView, CreateView, UpdateView, DeleteView
-from .models import Post, OneTimeCode
-from .forms import PostForm, ConfirmationCodeForm
-from django.urls import reverse_lazy, reverse
-from django.contrib.auth.forms import UserCreationForm
-from django.shortcuts import render, redirect
-from django.contrib.auth import authenticate, login, get_user_model
-from django import forms
-from django.contrib.auth.models import User
-from django.contrib import messages
 import random
+from django.contrib.auth import authenticate, login
+from django import forms
+from django.contrib import messages
+from django.contrib.auth import get_user_model
+from django.contrib.auth.forms import UserCreationForm
+from django.contrib.auth.mixins import LoginRequiredMixin
+from django.contrib.auth.models import User
+from django.core.mail import EmailMessage
+from django.shortcuts import render, redirect
+from django.template.loader import render_to_string
+from django.urls import reverse_lazy, reverse
+from django.views.generic import ListView, DetailView, CreateView, UpdateView, DeleteView
+
+from .forms import PostForm, ConfirmationCodeForm
+from .models import Post, OneTimeCode
 
 
 def generate_one_time_code():
@@ -30,19 +32,16 @@ def send_one_time_code_email(email, code, request):
     email.send()
 
 
-from django.contrib.auth import authenticate, login
-
-
 def confirm_registration(request):
     if request.method == 'POST':
         form = ConfirmationCodeForm(request.POST)
         if form.is_valid():
             entered_code = form.cleaned_data['code']
-            if OneTimeCode.objects.filter(code=entered_code, user=request.user).exists():
-                OneTimeCode.objects.filter(code=entered_code, user=request.user).delete()
+            if OneTimeCode.objects.filter(code = entered_code, user = request.user).exists():
+                OneTimeCode.objects.filter(code = entered_code, user = request.user).delete()
 
                 user_model = get_user_model()
-                user = user_model.objects.get(username=request.user.username)
+                user = user_model.objects.get(username = request.user.username)
 
                 if user is not None:
                     user.backend = 'django.contrib.auth.backends.ModelBackend'
