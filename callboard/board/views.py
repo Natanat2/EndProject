@@ -1,4 +1,4 @@
-from django.contrib.auth.mixins import PermissionRequiredMixin, LoginRequiredMixin
+from django.contrib.auth.mixins import LoginRequiredMixin
 from django.core.mail import EmailMessage
 from django.template.loader import render_to_string
 from django.views.generic import ListView, DetailView, CreateView, UpdateView, DeleteView
@@ -87,8 +87,7 @@ class PostCreate(LoginRequiredMixin, CreateView):
         return reverse_lazy('post_list')
 
 
-class PostEdit(PermissionRequiredMixin, UpdateView):
-    permission_required = ('post.change_post',)
+class PostEdit(LoginRequiredMixin, UpdateView):
     form_class = PostForm
     model = Post
     template_name = 'post_edit.html'
