@@ -1,12 +1,17 @@
 {% extends 'flatpages/default.html' %}
 
 {% block content %}
-<h1>Редактирование объявления</h1>
-<hr>
-<form action="" method="post">
-    {% csrf_token %}
-    {{ form.media }}
-    {{ form.as_p }}
-    <input type="submit" value="Save" />
-</form>
+  <h1>Редактирование объявления</h1>
+  <hr>
+
+  {% if user.is_authenticated and user == post.postAuthor %}
+    <form action="" method="post">
+      {% csrf_token %}
+      {{ form.media }}
+      {{ form.as_p }}
+      <input type="submit" value="Save" />
+    </form>
+  {% else %}
+    <p>У вас нет прав для редактирования этого объявления.</p>
+  {% endif %}
 {% endblock content %}
