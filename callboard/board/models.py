@@ -16,7 +16,6 @@ class Post(models.Model):
     postCategory = models.ForeignKey(Category, on_delete = models.CASCADE)
     dateCreation = models.DateTimeField(auto_now_add = True)
     title = models.CharField(max_length = 128, null = False)
-    text = models.TextField()
     content = RichTextField(null = True)
 
     def __str__(self):
