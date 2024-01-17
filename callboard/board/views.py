@@ -1,17 +1,16 @@
 import random
 from django.contrib.auth import authenticate, login
 from django import forms
-from django.contrib import messages
 from django.contrib.auth import get_user_model
 from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.contrib.auth.models import User
-from django.core.mail import EmailMessage
+from django.core.mail import send_mail
 from django.shortcuts import render, redirect
 from django.template.loader import render_to_string
 from django.urls import reverse_lazy, reverse
 from django.views.generic import ListView, DetailView, CreateView, UpdateView, DeleteView
-
+from django.contrib import messages
 from .forms import PostForm, ConfirmationCodeForm
 from .models import Post, OneTimeCode
 
@@ -26,10 +25,15 @@ def send_one_time_code_email(email, code, request):
     confirm_url = request.build_absolute_uri(reverse('confirm_registration'))
     html_message = render_to_string('email_template.html', {'code': code, 'confirm_url': confirm_url})
     from_email = 'natanat2@yandex.ru'
-    to_email = [email]
-    email = EmailMessage(subject, message, from_email, to_email)
-    email.content_subtype = 'html'
-    email.send()
+
+    send_mail(
+        subject,
+        message,
+        from_email,
+        [email],
+        html_message = html_message,
+        fail_silently = False,
+    )
 
 
 def confirm_registration(request):
@@ -42,6 +46,7 @@ def confirm_registration(request):
 
                 user_model = get_user_model()
                 user = user_model.objects.get(username = request.user.username)
+
                 if user is not None:
                     user.backend = 'django.contrib.auth.backends.ModelBackend'
                     login(request, user)
@@ -51,6 +56,8 @@ def confirm_registration(request):
                     messages.error(request, 'Неверные учетные данные. Пожалуйста, попробуйте еще раз.')
             else:
                 messages.error(request, 'Неверный код подтверждения. Пожалуйста, попробуйте еще раз.')
+        else:
+            messages.error(request, 'Пожалуйста, введите корректный код.')
     else:
         form = ConfirmationCodeForm()
 
