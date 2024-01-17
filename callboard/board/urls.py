@@ -1,4 +1,4 @@
-from django.contrib.auth.views import LogoutView
+from django.contrib.auth.views import LogoutView, LoginView
 from django.urls import path, include
 
 from .views import (PostList, Postdetail, PostCreate, PostEdit, PostDelete, registration_view, confirm_registration)
@@ -11,7 +11,7 @@ urlpatterns = [
     path('board/<int:pk>/delete/', PostDelete.as_view(), name = 'post_delete'),
     path('register/', registration_view, name='registration_view'),
     path('confirm-registration/', confirm_registration, name='confirm_registration'),
+    path('login/', LoginView.as_view(next_page='post_list'), name='login'),
     path('logout/', LogoutView.as_view(next_page='post_list'), name='logout'),
-    path('accounts/login/', LogoutView.as_view(), name='login'),
     path('ckeditor/', include('ckeditor_uploader.urls')),
 ]
