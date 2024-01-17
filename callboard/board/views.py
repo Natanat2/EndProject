@@ -37,12 +37,13 @@ def confirm_registration(request):
         form = ConfirmationCodeForm(request.POST)
         if form.is_valid():
             entered_code = form.cleaned_data['code']
+            print(f"Entered code: {entered_code}") # для отладки
             if OneTimeCode.objects.filter(code = entered_code, user = request.user).exists():
                 OneTimeCode.objects.filter(code = entered_code, user = request.user).delete()
 
                 user_model = get_user_model()
                 user = user_model.objects.get(username = request.user.username)
-
+                print("Code exists and user is not None") # для отладки
                 if user is not None:
                     user.backend = 'django.contrib.auth.backends.ModelBackend'
                     login(request, user)
@@ -112,8 +113,10 @@ def registration_view(request):
         if form.is_valid():
             user = form.save()
             one_time_code = generate_one_time_code()
+            print(f"Generated one-time code: {one_time_code}") #для отладки
             OneTimeCode.objects.create(code = one_time_code, user = user)
             send_one_time_code_email(user.email, one_time_code, request)
+            print(f"Email sent to {user.email} with code {one_time_code}") #для отладки
             user = authenticate(request, username = form.cleaned_data['username'],
                                 password = form.cleaned_data['password1'])
             login(request, user)
