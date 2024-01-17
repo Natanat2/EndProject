@@ -64,6 +64,25 @@ def confirm_registration(request):
     return render(request, 'confirm_registration.html', {'form': form})
 
 
+def registration_view(request):
+    if request.method == 'POST':
+        form = RegistrationForm(request.POST)
+        if form.is_valid():
+            user = form.save()
+            one_time_code = generate_one_time_code()
+            OneTimeCode.objects.create(code = one_time_code, user = user)
+            send_one_time_code_email(user.email, one_time_code, request)
+            user = authenticate(request, username = form.cleaned_data['username'],
+                                password = form.cleaned_data['password1'])
+            login(request, user)
+
+            return redirect('confirm_registration')
+    else:
+        form = RegistrationForm()
+
+    return render(request, 'registration.html', {'form': form})
+
+
 class PostList(ListView):
     model = Post
     ordering = 'dateCreation'
@@ -110,22 +129,3 @@ class RegistrationForm(UserCreationForm):
     class Meta:
         model = User
         fields = ['username', 'email', 'password1', 'password2']
-
-
-def registration_view(request):
-    if request.method == 'POST':
-        form = RegistrationForm(request.POST)
-        if form.is_valid():
-            user = form.save()
-            one_time_code = generate_one_time_code()
-            OneTimeCode.objects.create(code = one_time_code, user = user)
-            send_one_time_code_email(user.email, one_time_code, request)
-            user = authenticate(request, username = form.cleaned_data['username'],
-                                password = form.cleaned_data['password1'])
-            login(request, user)
-
-            return redirect('confirm_registration')
-    else:
-        form = RegistrationForm()
-
-    return render(request, 'registration.html', {'form': form})
