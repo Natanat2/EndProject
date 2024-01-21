@@ -27,11 +27,11 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'django.contrib.sites',
     'django.contrib.flatpages',
-    'board',
-    'accounts',
     'allauth',
     'allauth.account',
     'allauth.socialaccount',
+    'accounts',
+    'board',
     'ckeditor',
     'ckeditor_uploader',
 ]
