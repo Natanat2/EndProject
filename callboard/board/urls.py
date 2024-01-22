@@ -16,5 +16,5 @@ urlpatterns = [
     path('logout/', LogoutView.as_view(next_page = 'post_list'), name = 'logout'),
     path('ckeditor/', include('ckeditor_uploader.urls')),
     path('subscriptions/', subscriptions, name = 'subscriptions'),
-    path('post/<int:pk>/add_response/', add_response_to_post, name='add_response_to_post'),
+    path('post/<int:pk>/add_response/', add_response_to_post, name = 'add_response_to_post'),
 ]
