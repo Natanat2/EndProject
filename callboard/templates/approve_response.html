@@ -1,0 +1,10 @@
+{% extends 'flatpages/default.html' %}
+
+{% block content %}
+    <h2>Подтверждение принятия отклика</h2>
+    <form method="post">
+        {% csrf_token %}
+        <p>Вы уверены, что хотите принять этот отклик?</p>
+        <button type="submit">Да, принять</button>
+    </form>
+{% endblock %}

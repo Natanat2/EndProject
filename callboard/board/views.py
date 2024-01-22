@@ -196,3 +196,20 @@ class DeleteResponse(DeleteView):
 
     def get(self, request, *args, **kwargs):
         return self.post(request, *args, **kwargs)
+
+
+class ApproveResponse(UpdateView):
+    model = Response
+    template_name = 'approve_response.html'
+    fields = ['approve']
+
+    def form_valid(self, form):
+        response = form.save(commit = False)
+        response.approve = True
+        response.save()
+        messages.success(self.request, 'Отклик принят!')
+        return redirect('private_user_page')
+
+    def form_invalid(self, form):
+        messages.error(self.request, 'Произошла ошибка при принятии отклика.')
+        return redirect('private_user_page')
