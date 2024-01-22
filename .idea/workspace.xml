@@ -5,8 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8b15b94c-bddd-4e78-9ef4-3f201d3290f4" name="Changes" comment="start proj&#10;add subscribe to signals&#10;&#10;&#10;&#10;EMAIL_BACKEND (console)smtp">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/callboard/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/callboard/db.sqlite3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/callboard/templates/flatpages/default.html" beforeDir="false" afterPath="$PROJECT_DIR$/callboard/templates/flatpages/default.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -71,14 +69,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1705172650457</updated>
-    </task>
-    <task id="LOCAL-00049" summary="start proj&#10;add code confirm + mig&#10;add random def&#10;EMAIL_BACKEND (console)smtp&#10;none(mandatory)">
-      <option name="closed" value="true" />
-      <created>1705432071989</created>
-      <option name="number" value="00049" />
-      <option name="presentableId" value="LOCAL-00049" />
-      <option name="project" value="LOCAL" />
-      <updated>1705432071989</updated>
     </task>
     <task id="LOCAL-00050" summary="start proj&#10;add code confirm + mig&#10;add random def&#10;EMAIL_BACKEND (console)smtp&#10;none(mandatory)">
       <option name="closed" value="true" />
@@ -464,7 +454,15 @@
       <option name="project" value="LOCAL" />
       <updated>1705900891161</updated>
     </task>
-    <option name="localTasksCounter" value="98" />
+    <task id="LOCAL-00098" summary="start proj&#10;add subscribe to signals&#10;&#10;&#10;&#10;EMAIL_BACKEND (console)smtp">
+      <option name="closed" value="true" />
+      <created>1705901178570</created>
+      <option name="number" value="00098" />
+      <option name="presentableId" value="LOCAL-00098" />
+      <option name="project" value="LOCAL" />
+      <updated>1705901178570</updated>
+    </task>
+    <option name="localTasksCounter" value="99" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
