@@ -90,21 +90,27 @@ def registration_view(request):
 
 @login_required
 def add_response_to_post(request, pk):
-    post = get_object_or_404(Post, pk=pk)
+    post = get_object_or_404(Post, pk = pk)
 
     if request.method == 'POST':
         form = ResponseForm(request.POST)
         if form.is_valid():
-            response = form.save(commit=False)
+            response = form.save(commit = False)
             response.responsePost = post
             response.responseUser = request.user
             response.save()
-            return redirect('post_detail', pk=post.pk)
+            return redirect('post_detail', pk = post.pk)
     else:
         form = ResponseForm()
 
     return render(request, 'add_response_to_post.html', {'form': form, 'post': post})
 
+
+@login_required
+def private_user_page(request):
+    user_posts = Post.objects.filter(postAuthor = request.user)
+    responses = Response.objects.filter(responsePost__in = user_posts)
+    return render(request, 'private_user_page.html', {'user_posts': user_posts, 'responses': responses})
 
 
 class PostList(ListView):
