@@ -14,7 +14,7 @@ def post_created(sender, instance, created, **kwargs):
             'Новое объявление',
             f'Вышло новое объявление {instance.title}',
             'natanat2@yandex.ru',
-            [mail],
+            list(mail),
             fail_silently = False,
         )
 
