@@ -99,11 +99,40 @@ def add_response_to_post(request, pk):
             response.responsePost = post
             response.responseUser = request.user
             response.save()
+            messages.success(self.request, 'Отклик добавлен!')
             return redirect('post_detail', pk = post.pk)
     else:
         form = ResponseForm()
 
     return render(request, 'add_response_to_post.html', {'form': form, 'post': post})
+
+
+@login_required
+@csrf_protect
+def subscriptions(request):
+    if request.method == 'POST':
+        category_id = request.POST.get('category_id')
+        category = Category.objects.get(id = category_id)
+        action = request.POST.get('action')
+
+        if action == 'subscribe':
+            Subscription.objects.create(user = request.user, category = category)
+        elif action == 'unsubscribe':
+            Subscription.objects.filter(user = request.user, category = category, ).delete()
+
+    categories_with_subsriptions = Category.objects.annotate(
+        user_subscribed = Exists(
+            Subscription.objects.filter(
+                user = request.user,
+                category = OuterRef('pk')
+            )
+        )
+    ).order_by('name')
+    return render(
+        request,
+        'subscriptions.html',
+        {'categories': categories_with_subsriptions},
+    )
 
 
 @login_required
@@ -159,34 +188,6 @@ class RegistrationForm(UserCreationForm):
     class Meta:
         model = User
         fields = ['username', 'email', 'password1', 'password2']
-
-
-@login_required
-@csrf_protect
-def subscriptions(request):
-    if request.method == 'POST':
-        category_id = request.POST.get('category_id')
-        category = Category.objects.get(id = category_id)
-        action = request.POST.get('action')
-
-        if action == 'subscribe':
-            Subscription.objects.create(user = request.user, category = category)
-        elif action == 'unsubscribe':
-            Subscription.objects.filter(user = request.user, category = category, ).delete()
-
-    categories_with_subsriptions = Category.objects.annotate(
-        user_subscribed = Exists(
-            Subscription.objects.filter(
-                user = request.user,
-                category = OuterRef('pk')
-            )
-        )
-    ).order_by('name')
-    return render(
-        request,
-        'subscriptions.html',
-        {'categories': categories_with_subsriptions},
-    )
 
 
 class DeleteResponse(DeleteView):

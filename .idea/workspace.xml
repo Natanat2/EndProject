@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8b15b94c-bddd-4e78-9ef4-3f201d3290f4" name="Changes" comment="start proj&#10;add response cab&#10;add view&#10;&#10;&#10;EMAIL_BACKEND (console)smtp">
-      <change afterPath="$PROJECT_DIR$/callboard/templates/delete_response.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/callboard/board/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/callboard/board/urls.py" afterDir="false" />
+    <list default="true" id="8b15b94c-bddd-4e78-9ef4-3f201d3290f4" name="Changes" comment="start proj&#10;add response cab&#10;add view html&#10;add delete_response.html&#10;add approve_response.html&#10;&#10;&#10;EMAIL_BACKEND (console)smtp">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/callboard/board/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/callboard/board/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/callboard/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/callboard/db.sqlite3" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,22 +72,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1705172650457</updated>
-    </task>
-    <task id="LOCAL-00066" summary="start proj&#10;add logout + url + login&#10;&#10;EMAIL_BACKEND (console)smtp&#10;none(mandatory)">
-      <option name="closed" value="true" />
-      <created>1705438894256</created>
-      <option name="number" value="00066" />
-      <option name="presentableId" value="LOCAL-00066" />
-      <option name="project" value="LOCAL" />
-      <updated>1705438894256</updated>
-    </task>
-    <task id="LOCAL-00067" summary="start proj&#10;auth for add post&#10;&#10;EMAIL_BACKEND (console)smtp&#10;none(mandatory)">
-      <option name="closed" value="true" />
-      <created>1705441810989</created>
-      <option name="number" value="00067" />
-      <option name="presentableId" value="LOCAL-00067" />
-      <option name="project" value="LOCAL" />
-      <updated>1705441810989</updated>
     </task>
     <task id="LOCAL-00068" summary="start proj&#10;del text field&#10;remove This field is required&#10;&#10;EMAIL_BACKEND (console)smtp&#10;none(mandatory)">
       <option name="closed" value="true" />
@@ -465,7 +449,23 @@
       <option name="project" value="LOCAL" />
       <updated>1705935826059</updated>
     </task>
-    <option name="localTasksCounter" value="115" />
+    <task id="LOCAL-00115" summary="start proj&#10;add response cab&#10;add view html&#10;add delete_response.html&#10;&#10;&#10;EMAIL_BACKEND (console)smtp">
+      <option name="closed" value="true" />
+      <created>1705936044682</created>
+      <option name="number" value="00115" />
+      <option name="presentableId" value="LOCAL-00115" />
+      <option name="project" value="LOCAL" />
+      <updated>1705936044682</updated>
+    </task>
+    <task id="LOCAL-00116" summary="start proj&#10;add response cab&#10;add view html&#10;add delete_response.html&#10;add approve_response.html&#10;&#10;&#10;EMAIL_BACKEND (console)smtp">
+      <option name="closed" value="true" />
+      <created>1705936226436</created>
+      <option name="number" value="00116" />
+      <option name="presentableId" value="LOCAL-00116" />
+      <option name="project" value="LOCAL" />
+      <updated>1705936226436</updated>
+    </task>
+    <option name="localTasksCounter" value="117" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -481,8 +481,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="start proj&#10;del text field done&#10;remove This field is required&#10;&#10;EMAIL_BACKEND (console)smtp&#10;none(mandatory)" />
-    <MESSAGE value="start proj&#10;del text field done temp&#10;remove This field is required&#10;&#10;EMAIL_BACKEND (console)smtp&#10;none(mandatory)" />
     <MESSAGE value="start proj&#10;add column posts&#10;remove This field is required&#10;&#10;EMAIL_BACKEND (console)smtp&#10;none(mandatory)" />
     <MESSAGE value="start proj&#10;add del post&#10;&#10;&#10;EMAIL_BACKEND (console)smtp&#10;none(mandatory)" />
     <MESSAGE value="start proj&#10;add del post edit&#10;&#10;&#10;EMAIL_BACKEND (console)smtp&#10;none(mandatory)" />
@@ -506,6 +504,8 @@
     <MESSAGE value="start proj&#10;add response func&#10;add url in post&#10;done&#10;&#10;EMAIL_BACKEND (console)smtp" />
     <MESSAGE value="start proj&#10;add response cab&#10;&#10;EMAIL_BACKEND (console)smtp" />
     <MESSAGE value="start proj&#10;add response cab&#10;add view&#10;&#10;&#10;EMAIL_BACKEND (console)smtp" />
-    <option name="LAST_COMMIT_MESSAGE" value="start proj&#10;add response cab&#10;add view&#10;&#10;&#10;EMAIL_BACKEND (console)smtp" />
+    <MESSAGE value="start proj&#10;add response cab&#10;add view html&#10;add delete_response.html&#10;&#10;&#10;EMAIL_BACKEND (console)smtp" />
+    <MESSAGE value="start proj&#10;add response cab&#10;add view html&#10;add delete_response.html&#10;add approve_response.html&#10;&#10;&#10;EMAIL_BACKEND (console)smtp" />
+    <option name="LAST_COMMIT_MESSAGE" value="start proj&#10;add response cab&#10;add view html&#10;add delete_response.html&#10;add approve_response.html&#10;&#10;&#10;EMAIL_BACKEND (console)smtp" />
   </component>
 </project>
