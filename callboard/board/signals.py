@@ -1,6 +1,7 @@
 from django.db.models.signals import post_save, post_delete
 from django.dispatch import receiver
 from django.core.mail import EmailMultiAlternatives
+from .models import Post
 
 from .models import Response
 
