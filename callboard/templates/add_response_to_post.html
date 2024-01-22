@@ -4,7 +4,7 @@
 <h1>{{ post.title }}</h1>
 <p>{{ post.content|safe }}</p>
 
-
+<h5>Все отклики</h5>
 {% for response in post.response_set.all %}
 <p>{{ response.text }} - {{ response.responseUser.username }} - {{ response.dateCreation }}</p>
 {% endfor %}
