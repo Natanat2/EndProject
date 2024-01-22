@@ -33,19 +33,16 @@ def post_created(instance, created, **kwargs):
 
 @receiver(post_save, sender = Response)
 def response_created(instance, created, **kwargs):
-    if created:
-        mail_subject = 'Новый отклик на ваш пост'
-        message = f'На ваш пост "{instance.responsePost}" пришел новый отклик.'
-        to_email = instance.responsePost.postAuthor.email
-        send_notification_email(mail_subject, message, to_email)
-
-
-@receiver(post_save, sender = Response)
-def response_approved(instance, created, **kwargs):
     if created and instance.approve:
         mail_subject = 'Ваш отклик принят'
         message = f'Ваш отклик на пост "{instance.responsePost}" был принят.'
         to_email = instance.responseUser.email
+        send_notification_email(mail_subject, message, to_email)
+
+    elif created and not instance.approve:
+        mail_subject = 'Новый отклик на ваш пост'
+        message = f'На ваш пост "{instance.responsePost}" пришел новый отклик.'
+        to_email = instance.responsePost.postAuthor.email
         send_notification_email(mail_subject, message, to_email)
 
 
