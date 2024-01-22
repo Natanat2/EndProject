@@ -31,7 +31,7 @@ class Response(models.Model):
     responseUser = models.ForeignKey(User, on_delete = models.CASCADE)
     text = models.TextField()
     dateCreation = models.DateTimeField(auto_now_add = True)
-    approve = models.BooleanField(default = False, null = True)
+    approve = models.BooleanField(default = False)
 
 
 class OneTimeCode(models.Model):
