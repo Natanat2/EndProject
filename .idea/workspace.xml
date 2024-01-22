@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8b15b94c-bddd-4e78-9ef4-3f201d3290f4" name="Changes" comment="start proj&#10;add subscribe to signals&#10;&#10;&#10;&#10;EMAIL_BACKEND (console)smtp" />
+    <list default="true" id="8b15b94c-bddd-4e78-9ef4-3f201d3290f4" name="Changes" comment="start proj&#10;add response func&#10;add views&#10;&#10;&#10;EMAIL_BACKEND (console)smtp">
+      <change beforePath="$PROJECT_DIR$/callboard/board/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/callboard/board/urls.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -67,14 +69,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1705172650457</updated>
-    </task>
-    <task id="LOCAL-00053" summary="start proj&#10;add code confirm + mig&#10;add random def&#10;EMAIL_BACKEND (console)smtp&#10;none(mandatory)">
-      <option name="closed" value="true" />
-      <created>1705432421780</created>
-      <option name="number" value="00053" />
-      <option name="presentableId" value="LOCAL-00053" />
-      <option name="project" value="LOCAL" />
-      <updated>1705432421780</updated>
     </task>
     <task id="LOCAL-00054" summary="start proj&#10;add code confirm + mig&#10;add random def &#10;done&#10;EMAIL_BACKEND (console)smtp&#10;none(mandatory)">
       <option name="closed" value="true" />
@@ -460,7 +454,15 @@
       <option name="project" value="LOCAL" />
       <updated>1705901501410</updated>
     </task>
-    <option name="localTasksCounter" value="102" />
+    <task id="LOCAL-00102" summary="start proj&#10;add response func&#10;add views&#10;&#10;&#10;EMAIL_BACKEND (console)smtp">
+      <option name="closed" value="true" />
+      <created>1705902057271</created>
+      <option name="number" value="00102" />
+      <option name="presentableId" value="LOCAL-00102" />
+      <option name="project" value="LOCAL" />
+      <updated>1705902057271</updated>
+    </task>
+    <option name="localTasksCounter" value="103" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -476,7 +478,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="start proj&#10;add code confirm to views&#10;form after registration&#10;fix all&#10;done&#10;&#10;EMAIL_BACKEND (console)smtp&#10;none(mandatory)" />
     <MESSAGE value="start proj&#10;add logout&#10;&#10;EMAIL_BACKEND (console)smtp&#10;none(mandatory)" />
     <MESSAGE value="start proj&#10;add logout + url&#10;&#10;EMAIL_BACKEND (console)smtp&#10;none(mandatory)" />
     <MESSAGE value="start proj&#10;add logout + url + login&#10;&#10;EMAIL_BACKEND (console)smtp&#10;none(mandatory)" />
@@ -501,6 +502,7 @@
     <MESSAGE value="start proj&#10;add subscribe + migrate&#10;add view&#10;add urls&#10;&#10;&#10;EMAIL_BACKEND (console)smtp" />
     <MESSAGE value="start proj&#10;add subscribe + migrate&#10;add view&#10;add urls&#10;add template&#10;&#10;&#10;EMAIL_BACKEND (console)smtp" />
     <MESSAGE value="start proj&#10;add subscribe to signals&#10;&#10;&#10;&#10;EMAIL_BACKEND (console)smtp" />
-    <option name="LAST_COMMIT_MESSAGE" value="start proj&#10;add subscribe to signals&#10;&#10;&#10;&#10;EMAIL_BACKEND (console)smtp" />
+    <MESSAGE value="start proj&#10;add response func&#10;add views&#10;&#10;&#10;EMAIL_BACKEND (console)smtp" />
+    <option name="LAST_COMMIT_MESSAGE" value="start proj&#10;add response func&#10;add views&#10;&#10;&#10;EMAIL_BACKEND (console)smtp" />
   </component>
 </project>
