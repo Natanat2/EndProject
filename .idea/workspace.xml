@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8b15b94c-bddd-4e78-9ef4-3f201d3290f4" name="Changes" comment="start proj&#10;add subscribe + migrate&#10;add view&#10;add urls&#10;&#10;&#10;EMAIL_BACKEND (console)smtp">
-      <change afterPath="$PROJECT_DIR$/callboard/templates/subscriptions.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="8b15b94c-bddd-4e78-9ef4-3f201d3290f4" name="Changes" comment="start proj&#10;add subscribe + migrate&#10;add view&#10;add urls&#10;add template&#10;&#10;&#10;EMAIL_BACKEND (console)smtp">
+      <change beforePath="$PROJECT_DIR$/callboard/board/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/callboard/board/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,14 +69,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1705172650457</updated>
-    </task>
-    <task id="LOCAL-00044" summary="start proj&#10;add code confirm&#10;use console(smtp)&#10;none(mandatory)">
-      <option name="closed" value="true" />
-      <created>1705431636839</created>
-      <option name="number" value="00044" />
-      <option name="presentableId" value="LOCAL-00044" />
-      <option name="project" value="LOCAL" />
-      <updated>1705431636839</updated>
     </task>
     <task id="LOCAL-00045" summary="start proj&#10;add code confirm + mig&#10;use console(smtp)&#10;none(mandatory)">
       <option name="closed" value="true" />
@@ -463,7 +454,15 @@
       <option name="project" value="LOCAL" />
       <updated>1705898751610</updated>
     </task>
-    <option name="localTasksCounter" value="93" />
+    <task id="LOCAL-00093" summary="start proj&#10;add subscribe + migrate&#10;add view&#10;add urls&#10;add template&#10;&#10;&#10;EMAIL_BACKEND (console)smtp">
+      <option name="closed" value="true" />
+      <created>1705899004815</created>
+      <option name="number" value="00093" />
+      <option name="presentableId" value="LOCAL-00093" />
+      <option name="project" value="LOCAL" />
+      <updated>1705899004815</updated>
+    </task>
+    <option name="localTasksCounter" value="94" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -479,7 +478,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="start proj&#10;add code confirm to views&#10;form after registration&#10;&#10;EMAIL_BACKEND (console)smtp&#10;none(mandatory)" />
     <MESSAGE value="start proj&#10;add code confirm to views&#10;form after registration&#10;fix all&#10;&#10;EMAIL_BACKEND (console)smtp&#10;none(mandatory)" />
     <MESSAGE value="start proj&#10;add code confirm to views&#10;form after registration&#10;fix all&#10;done&#10;&#10;EMAIL_BACKEND (console)smtp&#10;none(mandatory)" />
     <MESSAGE value="start proj&#10;add logout&#10;&#10;EMAIL_BACKEND (console)smtp&#10;none(mandatory)" />
@@ -504,6 +502,7 @@
     <MESSAGE value="start proj&#10;add subscribe + migrate&#10;&#10;&#10;EMAIL_BACKEND (console)smtp" />
     <MESSAGE value="start proj&#10;add subscribe + migrate&#10;add view&#10;&#10;&#10;EMAIL_BACKEND (console)smtp" />
     <MESSAGE value="start proj&#10;add subscribe + migrate&#10;add view&#10;add urls&#10;&#10;&#10;EMAIL_BACKEND (console)smtp" />
-    <option name="LAST_COMMIT_MESSAGE" value="start proj&#10;add subscribe + migrate&#10;add view&#10;add urls&#10;&#10;&#10;EMAIL_BACKEND (console)smtp" />
+    <MESSAGE value="start proj&#10;add subscribe + migrate&#10;add view&#10;add urls&#10;add template&#10;&#10;&#10;EMAIL_BACKEND (console)smtp" />
+    <option name="LAST_COMMIT_MESSAGE" value="start proj&#10;add subscribe + migrate&#10;add view&#10;add urls&#10;add template&#10;&#10;&#10;EMAIL_BACKEND (console)smtp" />
   </component>
 </project>
