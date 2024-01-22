@@ -5,6 +5,32 @@ from django.core.mail import EmailMultiAlternatives
 from .models import Response
 
 
+def send_notification_email(mail_subject, message, to_email):
+    from_email = 'natanat2@yandex.ru'
+    msg = EmailMultiAlternatives(mail_subject, message, from_email, [to_email])
+    msg.send()
+
+
+@receiver(post_save, sender = Post)
+def post_created(instance, created, **kwargs):
+    if created:
+        emails = User.objects.filter(subscriptions__category = instance.postCategory).values_list('email', flat = True)
+        subject = 'Новое объявление'
+        text_content = (
+            f'Вышло новое объявление {instance.title}\n'
+            f'Ссылка на новое объявление: http://127.0.0.1:8000{instance.get_absolute_url()}'
+        )
+        html_content = (
+            f'Вышло новое объявление {instance.title}<br>'
+            f'Ссылка на новое объявление: <a href= "http://127.0.0.1:8000{instance.get_absolute_url()}">Подробнее</a>'
+
+        )
+        for email in emails:
+            msg = EmailMultiAlternatives(subject, text_content, None, [email])
+            msg.attach_alternative(html_content, 'text/html')
+            msg.send()
+
+
 @receiver(post_save, sender = Response)
 def response_created(instance, created, **kwargs):
     if created and instance.approve:
@@ -26,9 +52,3 @@ def response_deleted(instance, **kwargs):
     message = f'Ваш отклик на пост "{instance.responsePost}" был отклонен.'
     to_email = instance.responseUser.email
     send_notification_email(mail_subject, message, to_email)
-
-
-def send_notification_email(mail_subject, message, to_email):
-    from_email = 'natanat2@yandex.ru'
-    msg = EmailMultiAlternatives(mail_subject, message, from_email, [to_email])
-    msg.send()
