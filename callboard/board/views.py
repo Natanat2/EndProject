@@ -96,6 +96,7 @@ def add_response_to_post(request, pk):
             response = form.save(commit = False)
             response.responsePost = post
             response.responseUser = request.user
+            response.approve = True
             response.save()
             messages.success(request, 'Отклик добавлен!')
             return redirect('post_detail', pk = post.pk)
@@ -103,7 +104,6 @@ def add_response_to_post(request, pk):
         form = ResponseForm()
 
     return render(request, 'add_response_to_post.html', {'form': form, 'post': post})
-
 
 @login_required
 @csrf_protect
