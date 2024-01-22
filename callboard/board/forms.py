@@ -1,6 +1,6 @@
 from django import forms
 from ckeditor.widgets import CKEditorWidget
-from .models import Post
+from .models import Post, Response
 
 
 class PostForm(forms.ModelForm):
@@ -17,7 +17,14 @@ class PostForm(forms.ModelForm):
         'content': CKEditorWidget(),
     }
 
-    content = forms.CharField(widget=CKEditorWidget(), required=False)
+    content = forms.CharField(widget = CKEditorWidget(), required = False)
+
 
 class ConfirmationCodeForm(forms.Form):
     code = forms.CharField(max_length = 6, widget = forms.TextInput(attrs = {'autocomplete': 'off'}))
+
+
+class ResponseForm(forms.ModelForm):
+    class Meta:
+        model = Response
+        fields = ['text']
