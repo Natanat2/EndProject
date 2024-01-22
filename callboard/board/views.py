@@ -97,7 +97,7 @@ def add_response_to_post(request, pk):
             response = form.save(commit = False)
             response.responsePost = post
             response.responseUser = request.user
-            response.approve = None
+            response.approve = False
             response.save()
             messages.success(request, 'Отклик добавлен!')
             return redirect('post_detail', pk = post.pk)
@@ -205,7 +205,7 @@ class ApproveResponse(UpdateView):
     fields = ['approve']
 
     def form_valid(self, form):
-        response = form.save(commit=False)
+        response = form.save(commit = False)
         response.approve = True
         response.save()
         messages.success(self.request, 'Отклик принят!')
