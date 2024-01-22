@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8b15b94c-bddd-4e78-9ef4-3f201d3290f4" name="Changes" comment="start proj&#10;add response func&#10;add url in post&#10;done&#10;&#10;EMAIL_BACKEND (console)smtp">
-      <change beforePath="$PROJECT_DIR$/callboard/templates/postlist.html" beforeDir="false" afterPath="$PROJECT_DIR$/callboard/templates/postlist.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/callboard/board/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/callboard/board/urls.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,14 +69,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1705172650457</updated>
-    </task>
-    <task id="LOCAL-00058" summary="start proj&#10;add code confirm to views&#10;form after registration&#10;fix all&#10;&#10;EMAIL_BACKEND (console)smtp&#10;none(mandatory)">
-      <option name="closed" value="true" />
-      <created>1705433590167</created>
-      <option name="number" value="00058" />
-      <option name="presentableId" value="LOCAL-00058" />
-      <option name="project" value="LOCAL" />
-      <updated>1705433590167</updated>
     </task>
     <task id="LOCAL-00059" summary="start proj&#10;add code confirm to views&#10;form after registration&#10;fix all&#10;&#10;EMAIL_BACKEND (console)smtp&#10;none(mandatory)">
       <option name="closed" value="true" />
@@ -462,7 +454,15 @@
       <option name="project" value="LOCAL" />
       <updated>1705902550102</updated>
     </task>
-    <option name="localTasksCounter" value="107" />
+    <task id="LOCAL-00107" summary="start proj&#10;add response func&#10;add url in post&#10;done&#10;&#10;EMAIL_BACKEND (console)smtp">
+      <option name="closed" value="true" />
+      <created>1705902622538</created>
+      <option name="number" value="00107" />
+      <option name="presentableId" value="LOCAL-00107" />
+      <option name="project" value="LOCAL" />
+      <updated>1705902622538</updated>
+    </task>
+    <option name="localTasksCounter" value="108" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
