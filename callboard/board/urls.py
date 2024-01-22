@@ -1,7 +1,8 @@
 from django.contrib.auth.views import LogoutView, LoginView
 from django.urls import path, include
 
-from .views import (PostList, Postdetail, PostCreate, PostEdit, PostDelete, registration_view, confirm_registration)
+from .views import (PostList, Postdetail, PostCreate, PostEdit, PostDelete, registration_view, confirm_registration,
+                    subscriptions)
 
 urlpatterns = [
     path('board/', PostList.as_view(), name = 'post_list'),
@@ -14,4 +15,5 @@ urlpatterns = [
     path('login/', LoginView.as_view(next_page='post_list'), name='login'),
     path('logout/', LogoutView.as_view(next_page='post_list'), name='logout'),
     path('ckeditor/', include('ckeditor_uploader.urls')),
+    path('subscriptions/', subscriptions, name = 'subscriptions'),
 ]
