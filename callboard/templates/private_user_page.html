@@ -1,0 +1,24 @@
+{% extends 'flatpages/default.html' %}
+
+{% block content %}
+<h2>Ваши объявления</h2>
+{% for post in user_posts %}
+<div>
+    <p>{{ post.title }}</p>
+
+    <ul>
+        {% for response in responses %}
+        {% if response.responsePost == post %}
+        <li>
+            {{ response.text }} - {{ response.dateCreation }}
+            {% if not response.approve %}
+            (<a href="{% url 'delete_response' pk=response.pk %}">Удалить</a>)
+            (<a href="{% url 'approve_response' pk=response.pk %}">Принять</a>)
+            {% endif %}
+        </li>
+        {% endif %}
+        {% endfor %}
+    </ul>
+</div>
+{% endfor %}
+{% endblock %}
