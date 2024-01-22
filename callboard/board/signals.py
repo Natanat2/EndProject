@@ -27,7 +27,7 @@ def post_created(instance, created, **kwargs):
 
 
 @receiver(post_save, sender = Response)
-def response_created(sender, instance, created, **kwargs):
+def response_created(instance, created, **kwargs):
     if instance.approve:
         mail = instance.responseUser.email
         msg = EmailMultiAlternatives(
@@ -37,7 +37,7 @@ def response_created(sender, instance, created, **kwargs):
             [mail],
         )
         msg.send()
-    mail = instance.responsePost.responseUser.email
+    mail = instance.responsePost.postAuthor.email
     msg = EmailMultiAlternatives(
         'Пришел новый отклик',
         f'На ваш пост {instance.responsePost} пришел новый отклик',
