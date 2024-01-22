@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8b15b94c-bddd-4e78-9ef4-3f201d3290f4" name="Changes" comment="all done 100%&#10;signal test&#10;fix approve&#10;&#10;&#10;EMAIL_BACKEND (console)smtp">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/callboard/board/signals.py" beforeDir="false" afterPath="$PROJECT_DIR$/callboard/board/signals.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/callboard/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/callboard/db.sqlite3" afterDir="false" />
-    </list>
+    <list default="true" id="8b15b94c-bddd-4e78-9ef4-3f201d3290f4" name="Changes" comment="all done 100%&#10;signal test&#10;fix approve&#10;&#10;&#10;EMAIL_BACKEND (console)smtp" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -38,18 +34,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/Users/natan/PycharmProjects/EndProject/callboard/templates",
-    "settings.editor.selected.configurable": "preferences.lookFeel"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/natan/PycharmProjects/EndProject/callboard/templates&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\natan\PycharmProjects\EndProject\callboard\templates" />
@@ -72,6 +68,134 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1705172650457</updated>
+    </task>
+    <task id="LOCAL-00081" summary="start proj&#10;add response&#10;&#10;&#10;EMAIL_BACKEND (console)smtp">
+      <option name="closed" value="true" />
+      <created>1705500145906</created>
+      <option name="number" value="00081" />
+      <option name="presentableId" value="LOCAL-00081" />
+      <option name="project" value="LOCAL" />
+      <updated>1705500145906</updated>
+    </task>
+    <task id="LOCAL-00082" summary="start proj&#10;add response&#10;add signals&#10;&#10;&#10;EMAIL_BACKEND (console)smtp">
+      <option name="closed" value="true" />
+      <created>1705836165364</created>
+      <option name="number" value="00082" />
+      <option name="presentableId" value="LOCAL-00082" />
+      <option name="project" value="LOCAL" />
+      <updated>1705836165365</updated>
+    </task>
+    <task id="LOCAL-00083" summary="start proj&#10;add response&#10;add signals&#10;&#10;&#10;EMAIL_BACKEND (console)smtp">
+      <option name="closed" value="true" />
+      <created>1705838161111</created>
+      <option name="number" value="00083" />
+      <option name="presentableId" value="LOCAL-00083" />
+      <option name="project" value="LOCAL" />
+      <updated>1705838161111</updated>
+    </task>
+    <task id="LOCAL-00084" summary="start proj&#10;add response&#10;add signals&#10;&#10;&#10;EMAIL_BACKEND (console)smtp">
+      <option name="closed" value="true" />
+      <created>1705838893380</created>
+      <option name="number" value="00084" />
+      <option name="presentableId" value="LOCAL-00084" />
+      <option name="project" value="LOCAL" />
+      <updated>1705838893380</updated>
+    </task>
+    <task id="LOCAL-00085" summary="start proj&#10;add response&#10;add signals&#10;add new post&#10;&#10;EMAIL_BACKEND (console)smtp">
+      <option name="closed" value="true" />
+      <created>1705839836974</created>
+      <option name="number" value="00085" />
+      <option name="presentableId" value="LOCAL-00085" />
+      <option name="project" value="LOCAL" />
+      <updated>1705839836974</updated>
+    </task>
+    <task id="LOCAL-00086" summary="start proj&#10;add response&#10;add signals&#10;add new post&#10;&#10;EMAIL_BACKEND (console)smtp">
+      <option name="closed" value="true" />
+      <created>1705839936217</created>
+      <option name="number" value="00086" />
+      <option name="presentableId" value="LOCAL-00086" />
+      <option name="project" value="LOCAL" />
+      <updated>1705839936217</updated>
+    </task>
+    <task id="LOCAL-00087" summary="start proj&#10;add response&#10;add signals&#10;add new post&#10;&#10;EMAIL_BACKEND (console)smtp">
+      <option name="closed" value="true" />
+      <created>1705840028595</created>
+      <option name="number" value="00087" />
+      <option name="presentableId" value="LOCAL-00087" />
+      <option name="project" value="LOCAL" />
+      <updated>1705840028596</updated>
+    </task>
+    <task id="LOCAL-00088" summary="start proj&#10;add response&#10;add signals when add post&#10;&#10;&#10;EMAIL_BACKEND (console)smtp">
+      <option name="closed" value="true" />
+      <created>1705897251228</created>
+      <option name="number" value="00088" />
+      <option name="presentableId" value="LOCAL-00088" />
+      <option name="project" value="LOCAL" />
+      <updated>1705897251228</updated>
+    </task>
+    <task id="LOCAL-00089" summary="start proj&#10;add subscribe&#10;&#10;&#10;EMAIL_BACKEND (console)smtp">
+      <option name="closed" value="true" />
+      <created>1705897530106</created>
+      <option name="number" value="00089" />
+      <option name="presentableId" value="LOCAL-00089" />
+      <option name="project" value="LOCAL" />
+      <updated>1705897530106</updated>
+    </task>
+    <task id="LOCAL-00090" summary="start proj&#10;add subscribe + migrate&#10;&#10;&#10;EMAIL_BACKEND (console)smtp">
+      <option name="closed" value="true" />
+      <created>1705897566530</created>
+      <option name="number" value="00090" />
+      <option name="presentableId" value="LOCAL-00090" />
+      <option name="project" value="LOCAL" />
+      <updated>1705897566530</updated>
+    </task>
+    <task id="LOCAL-00091" summary="start proj&#10;add subscribe + migrate&#10;add view&#10;&#10;&#10;EMAIL_BACKEND (console)smtp">
+      <option name="closed" value="true" />
+      <created>1705898627786</created>
+      <option name="number" value="00091" />
+      <option name="presentableId" value="LOCAL-00091" />
+      <option name="project" value="LOCAL" />
+      <updated>1705898627786</updated>
+    </task>
+    <task id="LOCAL-00092" summary="start proj&#10;add subscribe + migrate&#10;add view&#10;add urls&#10;&#10;&#10;EMAIL_BACKEND (console)smtp">
+      <option name="closed" value="true" />
+      <created>1705898751610</created>
+      <option name="number" value="00092" />
+      <option name="presentableId" value="LOCAL-00092" />
+      <option name="project" value="LOCAL" />
+      <updated>1705898751610</updated>
+    </task>
+    <task id="LOCAL-00093" summary="start proj&#10;add subscribe + migrate&#10;add view&#10;add urls&#10;add template&#10;&#10;&#10;EMAIL_BACKEND (console)smtp">
+      <option name="closed" value="true" />
+      <created>1705899004815</created>
+      <option name="number" value="00093" />
+      <option name="presentableId" value="LOCAL-00093" />
+      <option name="project" value="LOCAL" />
+      <updated>1705899004815</updated>
+    </task>
+    <task id="LOCAL-00094" summary="start proj&#10;add subscribe + migrate&#10;add view&#10;add urls&#10;add template&#10;&#10;&#10;EMAIL_BACKEND (console)smtp">
+      <option name="closed" value="true" />
+      <created>1705899190246</created>
+      <option name="number" value="00094" />
+      <option name="presentableId" value="LOCAL-00094" />
+      <option name="project" value="LOCAL" />
+      <updated>1705899190246</updated>
+    </task>
+    <task id="LOCAL-00095" summary="start proj&#10;add subscribe to signals&#10;&#10;&#10;&#10;EMAIL_BACKEND (console)smtp">
+      <option name="closed" value="true" />
+      <created>1705899288106</created>
+      <option name="number" value="00095" />
+      <option name="presentableId" value="LOCAL-00095" />
+      <option name="project" value="LOCAL" />
+      <updated>1705899288106</updated>
+    </task>
+    <task id="LOCAL-00096" summary="start proj&#10;add subscribe to signals&#10;&#10;&#10;&#10;EMAIL_BACKEND (console)smtp">
+      <option name="closed" value="true" />
+      <created>1705900289575</created>
+      <option name="number" value="00096" />
+      <option name="presentableId" value="LOCAL-00096" />
+      <option name="project" value="LOCAL" />
+      <updated>1705900289575</updated>
     </task>
     <task id="LOCAL-00097" summary="start proj&#10;add subscribe to signals&#10;&#10;&#10;&#10;EMAIL_BACKEND (console)smtp">
       <option name="closed" value="true" />
@@ -337,135 +461,7 @@
       <option name="project" value="LOCAL" />
       <updated>1705938764780</updated>
     </task>
-    <task id="LOCAL-00130" summary="all done 100%&#10;test&#10;&#10;&#10;EMAIL_BACKEND (console)smtp">
-      <option name="closed" value="true" />
-      <created>1705939384498</created>
-      <option name="number" value="00130" />
-      <option name="presentableId" value="LOCAL-00130" />
-      <option name="project" value="LOCAL" />
-      <updated>1705939384498</updated>
-    </task>
-    <task id="LOCAL-00131" summary="all done 100%&#10;fix response approve&#10;&#10;&#10;EMAIL_BACKEND (console)smtp">
-      <option name="closed" value="true" />
-      <created>1705939667259</created>
-      <option name="number" value="00131" />
-      <option name="presentableId" value="LOCAL-00131" />
-      <option name="project" value="LOCAL" />
-      <updated>1705939667260</updated>
-    </task>
-    <task id="LOCAL-00132" summary="all done 100%&#10;fix response approve&#10;text signal&#10;&#10;&#10;EMAIL_BACKEND (console)smtp">
-      <option name="closed" value="true" />
-      <created>1705940469580</created>
-      <option name="number" value="00132" />
-      <option name="presentableId" value="LOCAL-00132" />
-      <option name="project" value="LOCAL" />
-      <updated>1705940469580</updated>
-    </task>
-    <task id="LOCAL-00133" summary="all done 100%&#10;fix response approve&#10;text signal&#10;&#10;&#10;EMAIL_BACKEND (console)smtp">
-      <option name="closed" value="true" />
-      <created>1705940770955</created>
-      <option name="number" value="00133" />
-      <option name="presentableId" value="LOCAL-00133" />
-      <option name="project" value="LOCAL" />
-      <updated>1705940770955</updated>
-    </task>
-    <task id="LOCAL-00134" summary="all done 100%&#10;fix response approve&#10;text signal&#10;&#10;&#10;EMAIL_BACKEND (console)smtp">
-      <option name="closed" value="true" />
-      <created>1705940837383</created>
-      <option name="number" value="00134" />
-      <option name="presentableId" value="LOCAL-00134" />
-      <option name="project" value="LOCAL" />
-      <updated>1705940837383</updated>
-    </task>
-    <task id="LOCAL-00135" summary="all done 100%&#10;fix response approve&#10;text signal&#10;&#10;&#10;EMAIL_BACKEND (console)smtp">
-      <option name="closed" value="true" />
-      <created>1705941306193</created>
-      <option name="number" value="00135" />
-      <option name="presentableId" value="LOCAL-00135" />
-      <option name="project" value="LOCAL" />
-      <updated>1705941306193</updated>
-    </task>
-    <task id="LOCAL-00136" summary="all done 100%&#10;fix response approve&#10;text signal&#10;add null true&#10;&#10;EMAIL_BACKEND (console)smtp">
-      <option name="closed" value="true" />
-      <created>1705941515122</created>
-      <option name="number" value="00136" />
-      <option name="presentableId" value="LOCAL-00136" />
-      <option name="project" value="LOCAL" />
-      <updated>1705941515122</updated>
-    </task>
-    <task id="LOCAL-00137" summary="all done 100%&#10;fix response approve&#10;text signal&#10;add null true + mig&#10;&#10;EMAIL_BACKEND (console)smtp">
-      <option name="closed" value="true" />
-      <created>1705941545129</created>
-      <option name="number" value="00137" />
-      <option name="presentableId" value="LOCAL-00137" />
-      <option name="project" value="LOCAL" />
-      <updated>1705941545129</updated>
-    </task>
-    <task id="LOCAL-00138" summary="all done 100%&#10;fix response approve&#10;&#10;&#10;EMAIL_BACKEND (console)smtp">
-      <option name="closed" value="true" />
-      <created>1705941829034</created>
-      <option name="number" value="00138" />
-      <option name="presentableId" value="LOCAL-00138" />
-      <option name="project" value="LOCAL" />
-      <updated>1705941829034</updated>
-    </task>
-    <task id="LOCAL-00139" summary="all done 100%&#10;fix response approve&#10;&#10;&#10;EMAIL_BACKEND (console)smtp">
-      <option name="closed" value="true" />
-      <created>1705942257468</created>
-      <option name="number" value="00139" />
-      <option name="presentableId" value="LOCAL-00139" />
-      <option name="project" value="LOCAL" />
-      <updated>1705942257468</updated>
-    </task>
-    <task id="LOCAL-00140" summary="all done 100%&#10;&#10;&#10;&#10;EMAIL_BACKEND (console)smtp">
-      <option name="closed" value="true" />
-      <created>1705942424866</created>
-      <option name="number" value="00140" />
-      <option name="presentableId" value="LOCAL-00140" />
-      <option name="project" value="LOCAL" />
-      <updated>1705942424866</updated>
-    </task>
-    <task id="LOCAL-00141" summary="all done 100%&#10;signal test&#10;&#10;&#10;EMAIL_BACKEND (console)smtp">
-      <option name="closed" value="true" />
-      <created>1705943277528</created>
-      <option name="number" value="00141" />
-      <option name="presentableId" value="LOCAL-00141" />
-      <option name="project" value="LOCAL" />
-      <updated>1705943277528</updated>
-    </task>
-    <task id="LOCAL-00142" summary="all done 100%&#10;signal test&#10;fix approve&#10;&#10;&#10;EMAIL_BACKEND (console)smtp">
-      <option name="closed" value="true" />
-      <created>1705943922561</created>
-      <option name="number" value="00142" />
-      <option name="presentableId" value="LOCAL-00142" />
-      <option name="project" value="LOCAL" />
-      <updated>1705943922561</updated>
-    </task>
-    <task id="LOCAL-00143" summary="all done 100%&#10;signal test&#10;fix approve&#10;&#10;&#10;EMAIL_BACKEND (console)smtp">
-      <option name="closed" value="true" />
-      <created>1705944585926</created>
-      <option name="number" value="00143" />
-      <option name="presentableId" value="LOCAL-00143" />
-      <option name="project" value="LOCAL" />
-      <updated>1705944585926</updated>
-    </task>
-    <task id="LOCAL-00144" summary="all done 100%&#10;signal test&#10;fix approve&#10;&#10;&#10;EMAIL_BACKEND (console)smtp">
-      <option name="closed" value="true" />
-      <created>1705947429852</created>
-      <option name="number" value="00144" />
-      <option name="presentableId" value="LOCAL-00144" />
-      <option name="project" value="LOCAL" />
-      <updated>1705947429852</updated>
-    </task>
-    <task id="LOCAL-00145" summary="all done 100%&#10;signal test&#10;fix approve&#10;&#10;&#10;EMAIL_BACKEND (console)smtp">
-      <option name="closed" value="true" />
-      <created>1705948260941</created>
-      <option name="number" value="00145" />
-      <option name="presentableId" value="LOCAL-00145" />
-      <option name="project" value="LOCAL" />
-      <updated>1705948260941</updated>
-    </task>
-    <option name="localTasksCounter" value="146" />
+    <option name="localTasksCounter" value="130" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -481,6 +477,14 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="start proj&#10;add html email start&#10;add login&#10;&#10;EMAIL_BACKEND (console)smtp&#10;none(mandatory)" />
+    <MESSAGE value="start proj&#10;add html email start&#10;add login&#10;done&#10;EMAIL_BACKEND (console)smtp&#10;none(mandatory)" />
+    <MESSAGE value="start proj&#10;add response&#10;&#10;&#10;EMAIL_BACKEND (console)smtp" />
+    <MESSAGE value="start proj&#10;add response&#10;add signals&#10;&#10;&#10;EMAIL_BACKEND (console)smtp" />
+    <MESSAGE value="start proj&#10;add response&#10;add signals&#10;add new post&#10;&#10;EMAIL_BACKEND (console)smtp" />
+    <MESSAGE value="start proj&#10;add response&#10;add signals when add post&#10;&#10;&#10;EMAIL_BACKEND (console)smtp" />
+    <MESSAGE value="start proj&#10;add subscribe&#10;&#10;&#10;EMAIL_BACKEND (console)smtp" />
+    <MESSAGE value="start proj&#10;add subscribe + migrate&#10;&#10;&#10;EMAIL_BACKEND (console)smtp" />
     <MESSAGE value="start proj&#10;add subscribe + migrate&#10;add view&#10;&#10;&#10;EMAIL_BACKEND (console)smtp" />
     <MESSAGE value="start proj&#10;add subscribe + migrate&#10;add view&#10;add urls&#10;&#10;&#10;EMAIL_BACKEND (console)smtp" />
     <MESSAGE value="start proj&#10;add subscribe + migrate&#10;add view&#10;add urls&#10;add template&#10;&#10;&#10;EMAIL_BACKEND (console)smtp" />
@@ -498,14 +502,6 @@
     <MESSAGE value="start proj&#10;change signals&#10;done&#10;&#10;EMAIL_BACKEND (console)smtp" />
     <MESSAGE value="all done&#10;&#10;EMAIL_BACKEND (console)smtp" />
     <MESSAGE value="all done 100%&#10;&#10;EMAIL_BACKEND (console)smtp" />
-    <MESSAGE value="all done 100%&#10;test&#10;&#10;&#10;EMAIL_BACKEND (console)smtp" />
-    <MESSAGE value="all done 100%&#10;fix response approve&#10;text signal&#10;&#10;&#10;EMAIL_BACKEND (console)smtp" />
-    <MESSAGE value="all done 100%&#10;fix response approve&#10;text signal&#10;add null true&#10;&#10;EMAIL_BACKEND (console)smtp" />
-    <MESSAGE value="all done 100%&#10;fix response approve&#10;text signal&#10;add null true + mig&#10;&#10;EMAIL_BACKEND (console)smtp" />
-    <MESSAGE value="all done 100%&#10;fix response approve&#10;&#10;&#10;EMAIL_BACKEND (console)smtp" />
-    <MESSAGE value="all done 100%&#10;&#10;&#10;&#10;EMAIL_BACKEND (console)smtp" />
-    <MESSAGE value="all done 100%&#10;signal test&#10;&#10;&#10;EMAIL_BACKEND (console)smtp" />
-    <MESSAGE value="all done 100%&#10;signal test&#10;fix approve&#10;&#10;&#10;EMAIL_BACKEND (console)smtp" />
-    <option name="LAST_COMMIT_MESSAGE" value="all done 100%&#10;signal test&#10;fix approve&#10;&#10;&#10;EMAIL_BACKEND (console)smtp" />
+    <option name="LAST_COMMIT_MESSAGE" value="all done 100%&#10;&#10;EMAIL_BACKEND (console)smtp" />
   </component>
 </project>
