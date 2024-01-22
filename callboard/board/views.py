@@ -13,7 +13,7 @@ from django.urls import reverse_lazy, reverse
 from django.views.generic import ListView, DetailView, CreateView, UpdateView, DeleteView
 from django.views.decorators.csrf import csrf_protect
 from django.contrib import messages
-from django.db.models import Exists,OuterRef
+from django.db.models import Exists, OuterRef
 from .models import Category, Subscription
 
 from .forms import PostForm, ConfirmationCodeForm
@@ -160,5 +160,5 @@ def subscriptions(request):
     return render(
         request,
         'subscriptions.html',
-        {'categories':categories_with_subsriptions},
+        {'categories': categories_with_subsriptions},
     )
