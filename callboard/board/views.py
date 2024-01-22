@@ -16,6 +16,7 @@ from django.db.models import Exists, OuterRef
 
 from .forms import PostForm, ConfirmationCodeForm, ResponseForm
 from .models import Post, OneTimeCode, Category, Subscription, Response
+from .signals import send_notification_email
 
 
 def generate_one_time_code():
@@ -208,6 +209,10 @@ class ApproveResponse(UpdateView):
         response.approve = True
         response.save()
         messages.success(self.request, 'Отклик принят!')
+        mail_subject = 'Ваш отклик принят'
+        message = f'Ваш отклик на пост "{response.responsePost}" был принят.'
+        to_email = response.responseUser.email
+        send_notification_email(mail_subject, message, to_email)
         return redirect('private_user_page')
 
     def form_invalid(self, form):
