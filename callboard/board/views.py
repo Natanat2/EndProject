@@ -204,12 +204,14 @@ class ApproveResponse(UpdateView):
     fields = ['approve']
 
     def form_valid(self, form):
-        response = form.save(commit = False)
+        response = form.save(commit=False)
         response.approve = True
         response.save()
+        print(f"Отклик {response.id} принят успешно!")  # Добавьте этот отладочный вывод
         messages.success(self.request, 'Отклик принят!')
         return redirect('private_user_page')
 
     def form_invalid(self, form):
+        print("Произошла ошибка при принятии отклика:", form.errors)  # Добавьте этот отладочный вывод
         messages.error(self.request, 'Произошла ошибка при принятии отклика.')
         return redirect('private_user_page')
