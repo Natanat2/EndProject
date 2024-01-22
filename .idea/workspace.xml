@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8b15b94c-bddd-4e78-9ef4-3f201d3290f4" name="Changes" comment="all done 100%&#10;fix response approve&#10;text signal&#10;add null true + mig&#10;&#10;EMAIL_BACKEND (console)smtp">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/callboard/board/signals.py" beforeDir="false" afterPath="$PROJECT_DIR$/callboard/board/signals.py" afterDir="false" />
+    <list default="true" id="8b15b94c-bddd-4e78-9ef4-3f201d3290f4" name="Changes" comment="all done 100%&#10;fix response approve&#10;&#10;&#10;EMAIL_BACKEND (console)smtp">
       <change beforePath="$PROJECT_DIR$/callboard/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/callboard/db.sqlite3" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -72,14 +70,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1705172650457</updated>
-    </task>
-    <task id="LOCAL-00089" summary="start proj&#10;add subscribe&#10;&#10;&#10;EMAIL_BACKEND (console)smtp">
-      <option name="closed" value="true" />
-      <created>1705897530106</created>
-      <option name="number" value="00089" />
-      <option name="presentableId" value="LOCAL-00089" />
-      <option name="project" value="LOCAL" />
-      <updated>1705897530106</updated>
     </task>
     <task id="LOCAL-00090" summary="start proj&#10;add subscribe + migrate&#10;&#10;&#10;EMAIL_BACKEND (console)smtp">
       <option name="closed" value="true" />
@@ -465,7 +455,15 @@
       <option name="project" value="LOCAL" />
       <updated>1705941545129</updated>
     </task>
-    <option name="localTasksCounter" value="138" />
+    <task id="LOCAL-00138" summary="all done 100%&#10;fix response approve&#10;&#10;&#10;EMAIL_BACKEND (console)smtp">
+      <option name="closed" value="true" />
+      <created>1705941829034</created>
+      <option name="number" value="00138" />
+      <option name="presentableId" value="LOCAL-00138" />
+      <option name="project" value="LOCAL" />
+      <updated>1705941829034</updated>
+    </task>
+    <option name="localTasksCounter" value="139" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -502,10 +500,10 @@
     <MESSAGE value="all done&#10;&#10;EMAIL_BACKEND (console)smtp" />
     <MESSAGE value="all done 100%&#10;&#10;EMAIL_BACKEND (console)smtp" />
     <MESSAGE value="all done 100%&#10;test&#10;&#10;&#10;EMAIL_BACKEND (console)smtp" />
-    <MESSAGE value="all done 100%&#10;fix response approve&#10;&#10;&#10;EMAIL_BACKEND (console)smtp" />
     <MESSAGE value="all done 100%&#10;fix response approve&#10;text signal&#10;&#10;&#10;EMAIL_BACKEND (console)smtp" />
     <MESSAGE value="all done 100%&#10;fix response approve&#10;text signal&#10;add null true&#10;&#10;EMAIL_BACKEND (console)smtp" />
     <MESSAGE value="all done 100%&#10;fix response approve&#10;text signal&#10;add null true + mig&#10;&#10;EMAIL_BACKEND (console)smtp" />
-    <option name="LAST_COMMIT_MESSAGE" value="all done 100%&#10;fix response approve&#10;text signal&#10;add null true + mig&#10;&#10;EMAIL_BACKEND (console)smtp" />
+    <MESSAGE value="all done 100%&#10;fix response approve&#10;&#10;&#10;EMAIL_BACKEND (console)smtp" />
+    <option name="LAST_COMMIT_MESSAGE" value="all done 100%&#10;fix response approve&#10;&#10;&#10;EMAIL_BACKEND (console)smtp" />
   </component>
 </project>
