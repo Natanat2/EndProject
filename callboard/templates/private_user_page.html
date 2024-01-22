@@ -12,7 +12,7 @@
         <li>
             {{ response.text }} - {{ response.dateCreation }}
             {% if not response.approve %}
-            (<a href="{% url 'delete_response' pk=response.pk %}">Удалить</a>)
+            (<a href="{% url 'delete_response' pk=response.pk %}">Отклонить</a>)
             (<a href="{% url 'approve_response' pk=response.pk %}">Принять</a>)
             {% endif %}
         </li>
