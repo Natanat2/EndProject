@@ -1,22 +1,29 @@
 from django.db.models.signals import post_save
 from django.dispatch import receiver
-from django.core.mail import send_mail
+from django.core.mail import EmailMultiAlternatives
 from django.contrib.auth.models import User
 
 from .models import Post, Response
 
 
 @receiver(post_save, sender = Post)
-def post_created(sender, instance, created, **kwargs):
+def post_created(instance, created, **kwargs):
     if created:
-        mail = User.objects.values_list('email', flat = True)
-        send_mail(
-            'Новое объявление',
-            f'Вышло новое объявление {instance.title}',
-            'natanat2@yandex.ru',
-            list(mail),
-            fail_silently = False,
+        emails = User.objects.filter(subscriptions__category = instance.category).values_list('email', flat = True)
+        subject = 'Новое объявление'
+        text_content = (
+            f'Вышло новое объявление {instance.title}\n'
+            f'Ссылка на новое объявление: http://127.0.0.1:8000{instance.get_absolute_url()}'
         )
+        html_content = (
+            f'Вышло новое объявление {instance.title}<br>'
+            f'Ссылка на новое объявление: <a href= "http://127.0.0.1:8000{instance.get_absolute_url()}">'
+
+        )
+        for email in emails:
+            msg = EmailMultiAlternatives(subject, text_content, None, [email])
+            msg.attach_alternative(html_content, 'text/html')
+            msg.send()
 
 
 @receiver(post_save, sender = Response)
