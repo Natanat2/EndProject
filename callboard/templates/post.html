@@ -24,5 +24,12 @@
         {% if user.is_authenticated and user != post.postAuthor %}
             <a href="{% url 'add_response_to_post' pk=post.id %}">Оставить отклик</a>
         {% endif %}
+
+        {% if user.is_authenticated %}
+            <h2>Отклики пользователя</h2>
+            {% for response in user.response_set.all %}
+                <p>{{ response.text }} - {{ response.responsePost.title }} - {{ response.dateCreation|date:'d F Y' }}</p>
+            {% endfor %}
+        {% endif %}
     </div>
 {% endblock content %}
