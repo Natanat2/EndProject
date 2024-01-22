@@ -9,7 +9,7 @@ from .models import Post, Response
 @receiver(post_save, sender = Post)
 def post_created(instance, created, **kwargs):
     if created:
-        emails = User.objects.filter(subscriptions__category = instance.category).values_list('email', flat = True)
+        emails = User.objects.filter(subscriptions__category = instance.postCategory).values_list('email', flat = True)
         subject = 'Новое объявление'
         text_content = (
             f'Вышло новое объявление {instance.title}\n'
@@ -17,7 +17,7 @@ def post_created(instance, created, **kwargs):
         )
         html_content = (
             f'Вышло новое объявление {instance.title}<br>'
-            f'Ссылка на новое объявление: <a href= "http://127.0.0.1:8000{instance.get_absolute_url()}">'
+            f'Ссылка на новое объявление: <a href= "http://127.0.0.1:8000{instance.get_absolute_url()}">Подробнее</a>'
 
         )
         for email in emails:
@@ -30,18 +30,18 @@ def post_created(instance, created, **kwargs):
 def response_created(sender, instance, created, **kwargs):
     if instance.approve:
         mail = instance.responseUser.email
-        send_mail(
+        msg = EmailMultiAlternatives(
             'Ваш отклик приняли',
             f'Ваш отклик на пост {instance.responsePost} приняли',
             'natanat2@yandex.ru',
             [mail],
-            fail_silently = False,
         )
+        msg.send()
     mail = instance.responsePost.responseUser.email
-    send_mail(
+    msg = EmailMultiAlternatives(
         'Пришел новый отклик',
         f'На ваш пост {instance.responsePost} пришел новый отклик',
         'natanat2@yandex.ru',
         [mail],
-        fail_silently = False,
     )
+    msg.send()
