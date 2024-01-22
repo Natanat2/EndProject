@@ -4,13 +4,16 @@ from django import forms
 from django.contrib.auth import get_user_model
 from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth.mixins import LoginRequiredMixin
+from django.contrib.auth.decorators import login_required
 from django.contrib.auth.models import User
 from django.core.mail import send_mail
 from django.shortcuts import render, redirect
 from django.template.loader import render_to_string
 from django.urls import reverse_lazy, reverse
 from django.views.generic import ListView, DetailView, CreateView, UpdateView, DeleteView
+from django.views.decorators.csrf import csrf_protect
 from django.contrib import messages
+from .models import Category, Subscription
 
 from .forms import PostForm, ConfirmationCodeForm
 from .models import Post, OneTimeCode
@@ -130,3 +133,31 @@ class RegistrationForm(UserCreationForm):
     class Meta:
         model = User
         fields = ['username', 'email', 'password1', 'password2']
+
+
+@login_required
+@csrf_protect
+def subscriptions(request):
+    if request.method == 'POST':
+        category_id = request.POST.get('category_id')
+        category = Category.objects.get(id = category_id)
+        action = request.POST.get('action')
+
+        if action == 'subscribe':
+            Subscription.objects.create(user = request.user, category = category)
+        elif action == 'unsubscribe':
+            Subscription.objects.filter(user = request.user, category = category, ).delete()
+
+    categories_with_subsriptions = Category.objects.annotate(
+        user_subscribed = Exists(
+            Subscription.objects.filter(
+                user = request.user,
+                category = OuterRef('pk')
+            )
+        )
+    ).order_by('name')
+    return render(
+        request,
+        'subscriptions.html',
+        {'categories':categories_with_subsriptions},
+    )
