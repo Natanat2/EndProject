@@ -2,7 +2,7 @@ from django.contrib.auth.views import LogoutView, LoginView
 from django.urls import path, include
 
 from .views import (PostList, Postdetail, PostCreate, PostEdit, PostDelete, registration_view, confirm_registration,
-                    subscriptions, add_response_to_post)
+                    subscriptions, add_response_to_post, DeleteResponse)
 
 urlpatterns = [
     path('board/', PostList.as_view(), name = 'post_list'),
@@ -17,4 +17,5 @@ urlpatterns = [
     path('ckeditor/', include('ckeditor_uploader.urls')),
     path('subscriptions/', subscriptions, name = 'subscriptions'),
     path('board/<int:pk>/add_response/', add_response_to_post, name = 'add_response_to_post'),
+    path('response/<int:pk>/delete/', DeleteResponse.as_view(), name='delete_response'),
 ]

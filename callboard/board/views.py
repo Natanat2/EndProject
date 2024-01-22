@@ -187,3 +187,12 @@ def subscriptions(request):
         'subscriptions.html',
         {'categories': categories_with_subsriptions},
     )
+
+
+class DeleteResponse(DeleteView):
+    model = Response
+    template_name = 'delete_response.html'
+    success_url = reverse_lazy('private_user_page')
+
+    def get(self, request, *args, **kwargs):
+        return self.post(request, *args, **kwargs)
