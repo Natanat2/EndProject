@@ -1,7 +1,7 @@
 import random
-from django.contrib.auth import authenticate, login
 from django import forms
-from django.contrib.auth import get_user_model
+from django.contrib import messages
+from django.contrib.auth import authenticate, login, get_user_model
 from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.contrib.auth.decorators import login_required
@@ -12,12 +12,10 @@ from django.template.loader import render_to_string
 from django.urls import reverse_lazy, reverse
 from django.views.generic import ListView, DetailView, CreateView, UpdateView, DeleteView
 from django.views.decorators.csrf import csrf_protect
-from django.contrib import messages
 from django.db.models import Exists, OuterRef
-from .models import Category, Subscription, Response
 
 from .forms import PostForm, ConfirmationCodeForm, ResponseForm
-from .models import Post, OneTimeCode
+from .models import Post, OneTimeCode, Category, Subscription, Response
 
 
 def generate_one_time_code():

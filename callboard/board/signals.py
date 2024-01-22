@@ -1,9 +1,8 @@
 from django.db.models.signals import post_save, post_delete
 from django.dispatch import receiver
 from django.core.mail import EmailMultiAlternatives
-from .models import Post
 
-from .models import Response
+from .models import Response, Post
 
 
 def send_notification_email(mail_subject, message, to_email):
