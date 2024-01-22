@@ -2,7 +2,7 @@ from django.contrib.auth.views import LogoutView, LoginView
 from django.urls import path, include
 
 from .views import (PostList, Postdetail, PostCreate, PostEdit, PostDelete, registration_view, confirm_registration,
-                    subscriptions, add_response_to_post, DeleteResponse, ApproveResponse)
+                    subscriptions, add_response_to_post, DeleteResponse, ApproveResponse, private_user_page)
 
 urlpatterns = [
     path('board/', PostList.as_view(), name = 'post_list'),
@@ -19,4 +19,5 @@ urlpatterns = [
     path('board/<int:pk>/add_response/', add_response_to_post, name = 'add_response_to_post'),
     path('response/<int:pk>/delete/', DeleteResponse.as_view(), name='delete_response'),
     path('response/<int:pk>/approve/', ApproveResponse.as_view(), name='approve_response'),
+    path('private_user_page/', private_user_page, name='private_user_page'),
 ]
