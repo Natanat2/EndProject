@@ -45,7 +45,7 @@ def response_created(instance, created, **kwargs):
         to_email = instance.responseUser.email
         send_notification_email(mail_subject, message, to_email)
 
-    elif created:
+    elif created and instance.approve is None:
         mail_subject = 'Новый отклик на ваш пост'
         message = f'На ваш пост "{instance.responsePost}" пришел новый отклик.'
         to_email = instance.responsePost.postAuthor.email

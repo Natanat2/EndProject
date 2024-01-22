@@ -96,6 +96,7 @@ def add_response_to_post(request, pk):
             response = form.save(commit = False)
             response.responsePost = post
             response.responseUser = request.user
+            response.approve = None
             response.save()
             messages.success(request, 'Отклик добавлен!')
             return redirect('post_detail', pk = post.pk)
