@@ -15,7 +15,7 @@
 
 заходим в папку с проектом
 
-### `cd callboard` 
+### `cd EndProject` 
 
 создаем виртуальное окружение
 
@@ -31,26 +31,12 @@
 
 ## `pip install -r requirements.txt`
 
-заходим в папку с Django
+заходим в папку с проектом
 
-## `cd Silant` 
+## `cd callboard` 
 
 запускаем проект в IDE
 
 ## `py manage.py runserver`
 
 ----
-
-# frontend:
-
-заходим в папку с проектом в IDE
-
-## `cd silant/frontend`
-
-устанавливаем зависимости
-
-## `npm install`
-
-запускаем React проект в IDE
-
-## `npm start`
